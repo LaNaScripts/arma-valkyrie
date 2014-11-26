@@ -1,0 +1,58 @@
+<header>
+  <h1>{{ site.title }}</h1>
+  <p>{{ site.description }}</p>
+
+  <nav class="site-nav">
+    <h2>Modules</h2>
+    <ul>
+      {% for page in site.pages %}
+        {% if page.title %}
+          {% if page.categories | contains modules %}
+            <li>
+              <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            </li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <h2>Development</h2>
+    <ul>
+      {% for page in site.pages %}
+        {% if page.title %}
+          {% if page.categories | contains 'topics' %}
+            <li>
+              <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            </li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <h2>Updates</h2>
+    <ul>
+      {% for post in site.posts %}
+        {% if post.title %}
+          {% if post.categories | contains 'updates' %}
+            <li>
+              <a class="page-link" href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            </li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <h2>Project</h2>
+    <ul>
+      <li>
+        <a href="https://github.com/devynspencer/valkyrie/zipball/master" class="btn">Download as .zip</a>
+      </li>
+      <li>
+        <a href="https://github.com/devynspencer/valkyrie/tarball/master" class="btn">Download as .tar.gz</a>
+      </li>
+      <li>
+        <a href="https://github.com/devynspencer/valkyrie"><span class="icon"></span>View on GitHub</a>
+      </li>
+    </ul>
+  </nav>
+</header>
