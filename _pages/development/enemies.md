@@ -18,7 +18,7 @@
 * Will engage when supported by another group
 
 ## Heavies
-*"They're carrying the weight of two men on their backs and they **still** move faster than me."*
+*"They're carrying the weight of two men on their backs and they still move faster than me."*
 
 * Versatile heavy infantry armed with LMGs, and lots of grenades
 
