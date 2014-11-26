@@ -1,0 +1,9 @@
+title: Valkyrie, a reimagining of Arma
+description: Arma 3 modules designed around facilitating a rich, dynamically-generated open world adventures. Experience a grittier, engaging version of Altis that adapts to your play style.
+baseurl: "valkyrie"
+url: "http://devynspencer.github.io"
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
