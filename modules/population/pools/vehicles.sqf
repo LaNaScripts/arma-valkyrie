@@ -1,3 +1,38 @@
+/*
+@name: pools\equipment\weapons.sqf
+@description: pool of weapons to randomly select from
+@author: created by Devyn Spencer for http://github.com/devynspencer/valkyrie.Altis
+@params:
+@returns: attached to a function with #include
+*/
+
+switch _rarity do {
+  case "basic": {
+    _vehicles = [
+
+    ];
+  };
+
+  case "common": {
+    _vehicles = [
+
+    ];
+  };
+
+  case "uncommon": {
+    _vehicles = [
+
+    ];
+  };
+
+  case "rare": {
+    _vehicles = [
+
+    ];
+  };
+};
+
+/*
 civilianVehicles = [
   "C_Quadbike_01_F",
   "C_Hatchback_01_F",
@@ -172,3 +207,4 @@ vehicleAddition2 = [
   "Chemlight_yellow",
   "Chemlight_red"
 ];
+*/
