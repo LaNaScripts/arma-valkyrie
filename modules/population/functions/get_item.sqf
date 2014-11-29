@@ -6,7 +6,7 @@
     _pool   -- pool to select an item from; defaults to random pool
     _rarity -- rarity of item to select; defaults to random rarity
   ]
-  @returns: an object classname in string form
+  @returns: an object classname in string form, and the pool associated with the object
 */
 
 private [
@@ -31,15 +31,15 @@ _rarity = [_this, 1, ([] call getRarity), ""] call BIS_fnc_param;
 
 // randomly select the item based on the given item _pool and _rarity
 switch _pool do {
-  case "weapons": {
+  case "weapon": {
     #include "pools\equipment\weapons.sqf"
   };
 
-  case "items": {
+  case "item": {
     #include "pools\equipment\items.sqf"
   };
 
-  case "uniforms": {
+  case "uniform": {
     #include "pools\equipment\uniforms.sqf"
   };
 
@@ -50,4 +50,4 @@ switch _pool do {
 
 _item = _items call BIS_fnc_selectRandom;
 
-_item;
+return [_item, _pool];
