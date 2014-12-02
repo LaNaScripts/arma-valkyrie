@@ -14,6 +14,13 @@ The overall goal of this project is to provide players with an enormous open wor
 ## Modules
 Specifically, the project is broken into many small and medium sized modules which can be endlessly combined to deliver a highly dynamic environment. Check out the [module development timeline](/development/timeline.md) for the status of each module.
 
+### [optimized map](#)
+Explore an entirely new, feature-rich environment in the sands of Takistan.
+
+* Enlarged version of Arma 2 Takistan map (reworked from scratch) with objects updated or removed, and several large desert regions added.
+* New map will simultaneously offer increased performance as well as a larger playable area.
+* New regions will support a *very* large array of dynamic encounters, and improve the overall balance of the environment
+
 ### [zone populations](#)
 What's your next adventure look like? Spend less time in the editor and more time on the battlefield! Feed your sense of adventure with dynamic, self-populating zones that ensure you'll never have the same experience twice.
 
