@@ -26,6 +26,11 @@ Had enough of the sun? Explore the frozen tundras of an *entirely* new map desig
 ### [zone populations](#)
 What's your next adventure look like? Spend less time in the editor and more time on the battlefield! Feed your sense of adventure with dynamic, self-populating zones that ensure you'll never have the same experience twice.
 
+* dynamic enemy patrols - random behavior, loadouts, and skills from a pool of predefined encounter groups
+* rural patrols - less populated areas are more likely to enemy fast movers, such as spawn technical patrols as well as civilian smugglers
+* random supply airdrops - supply drops spawn randomly in player inhabited zones
+* supply chasers - enemies are interested in those supplies too!
+
 ### [resource system](#)
 Salvage resources from the environment to feed your ambitions! Trade with ai merchants for [construction](#) materials, vehicles, [food](#) & supplies, repairs, weapon upgrades, or [mercenaries](#).
 
@@ -60,7 +65,11 @@ Looking for a change? Take an active role in shaping the world around you with e
 Counterattack! Test your abilities and evolve your strategy against cunning enemy forces that react and redeploy to counter your actions. Stay one step ahead and silence key communication hubs, and confuse your enemies with feigned advances.
 
 ### [support units](#)
+You did remember your radio, right?
+
 * earn or purchase access to single-use support packages
+* radio supply drops
+* player-assisting ai spotters
 
 ### [organic recruitment](#)
 Help the civilians of Altis come alive!
