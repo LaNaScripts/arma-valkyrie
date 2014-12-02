@@ -73,6 +73,7 @@ Strike from the shadows and see Altis in an entirely new *light*. Use the cover 
 Engage dynamic enemy forces that make intelligent use of the light to fight on their terms.
 
 ### [equipment upgrades](#)
+Use collected scrap to reinforce vehicles, weapons, and equipment and improve their features. One man's trash ...
 
 ### [drone reconnaissance](#)
 * purchase UAVs, set them to patrol a map location, and view a live video feed from the UAV control console
