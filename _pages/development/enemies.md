@@ -51,6 +51,11 @@
 * Support team with aerial drones
 * Instruct their autonomous drones to provide overwatch or fire support depending on visibility
 
+## Drone hives
+*"Hey! Where'd the sun go?"*
+
+* Swarms of lightly equipped drones surrounding a static emplacement
+
 ## Hoarders (construction module)
 *"Hoarders make up for their terrible aim by having lots of shit to hide behind."*
 
