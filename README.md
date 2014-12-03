@@ -86,6 +86,7 @@ Use collected scrap to reinforce vehicles, weapons, and equipment and improve th
 
 ### [drone reconnaissance](#)
 * purchase UAVs, set them to patrol a map location, and view a live video feed from the UAV control console
+* fixed view recon view using [kzk's seagullCam](http://killzonekid.com/arma-scripting-tutorials-fly-like-an-e-seagull/) on player-owned UAVs
 
 ### [perimeter defense](#)
 * Craft improvised motion detectors, wide area cameras, and low/medium-tech traps using raw materials scavenged from the environment.
