@@ -60,7 +60,7 @@ switch (true) do {
 };
 
 /* possibly refactor into construction module, when started
-// fix for sunken/rissen objects :)
+// fix for sunken/risen objects :)
 _adjustZ = switch (true) do
 {
   case (_objClass == "Land_Scaffolding_F"):         { -3 };

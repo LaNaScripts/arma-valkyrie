@@ -1,42 +1,23 @@
-//
-enableSaving [ false, false ];
-spawnVehicle = compile preprocessfilelinenumbers "modules\population\functions\spawnVehicle.sqf";
+/*
 
-civilianVehicles = [
-  "C_Quadbike_01_F",
-  "C_Hatchback_01_F",
-  "C_Hatchback_01_sport_F",
-  "C_SUV_01_F",
-  "C_Offroad_01_F",
-  "I_G_Offroad_01_F",
-  "C_Van_01_box_F",
-  "C_Van_01_transport_F"
-];
+  file: 'init.sqf'
+  author: devyn spencer (http://github.com/devynspencer)
+  description:
+    - initializes core processes and functions
+    - initializes modules included in 'server\config.sqf'
 
-//Light Military Vehicle List - Random Spawns
-lightMilitaryVehicles = [
-  "B_Quadbike_01_F",
-  "O_Quadbike_01_F",
-  "I_Quadbike_01_F",
-  "I_G_Quadbike_01_F",
-  "O_Truck_02_covered_F",
-  "I_Truck_02_covered_F",
-  "O_Truck_02_transport_F",
-  "I_Truck_02_transport_F",
-  "I_G_Offroad_01_armed_F"
-];
+*/
 
-//Medium Military Vehicle List - Random Spawns
-mediumMilitaryVehicles = [
-  "I_Truck_02_Fuel_F",
-  "O_Truck_02_Fuel_F",
-  "I_Truck_02_medical_F",
-  "O_Truck_02_medical_F",
-  "B_MRAP_01_F",
-  "O_MRAP_02_F",
-  "I_MRAP_03_F"
-];
+// define global variables
+enableSaving [false, false];
 
+// compile global functions
+setLoadout = compile preProcessFileLineNumbers "functions\setLoadout.sqf";
+refillPrimaryAmmo = compile preProcessFileLineNumbers "functions\refillPrimaryAmmo.sqf";
+
+// compile global event handlers
+
+// run core processes
 [] execVM "modules\population\functions\T8_UnitsINIT.sqf";
 [] execVM "modules\population\functions\T8_missionEXEC.sqf";
 [] execVM "modules\population\functions\garbageCollector.sqf";

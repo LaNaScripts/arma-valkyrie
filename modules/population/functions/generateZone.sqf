@@ -1,23 +1,12 @@
 /*
- =======================================================================================================================
 
-	___ T8 Units _______________________________________________________________________________________________________
+	author:		   T-800a
+	file:		     T8_missionEXEC.sqf
+	description: This file creates the Units, kind of
+	license:     Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 
-	File:		T8_missionEXEC.sqf
-	Author:		T-800a
-	E-Mail:		t-800a@gmx.net
-
-	This file creates the Units, kind of
-
-
-	This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
-	To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/4.0/ or send a letter to
-	Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
-
- =======================================================================================================================
 */
 
-// We dont want players here
 waitUntil { !isNil "T8U_var_useHC" };
 private [
 	"_exit",
@@ -28,7 +17,9 @@ private [
 	"_sentryPatrol",
 	"_fullPatrol",
 	"_sniperTeam",
-	"_technicalPatrol"
+	"_technicalPatrol",
+	"_nearestMarker",
+	"_randomMarker"
 ];
 
 _exit = false;
@@ -54,44 +45,6 @@ if (_exit) exitWith {};
 waitUntil {!isNil "T8U_var_InitDONE"};
 sleep 5;
 
-_fireTeam = [
-	"O_soldier_TL_F",
-	"O_medic_F",
-	"O_soldier_F",
-	"O_soldier_AR_F"
-];
-
-_sentryPatrol = [
-	"O_soldier_TL_F",
-	"O_medic_F",
-	"O_soldier_F"
-];
-
-_fullPatrol = [
-	"O_soldier_SL_F",
-	"O_medic_F",
-	"O_soldier_F",
-	"O_soldier_TL_F",
-	"O_soldier_F",
-	"O_soldier_AR_F"
-];
-
-_sniperTeam = [
-	"O_sniper_F",
-	"O_spotter_F"
-];
-
-_technicalPatrol = [
-	"O_G_Offroad_01_armed_F",
-	"O_G_Offroad_01_F"
-];
-
-/*
-_markers = [
-	"mkr_1",
-];
-*/
-
 _encounter = [
 	_fireTeam,
 	_sentryPatrol,
@@ -99,6 +52,10 @@ _encounter = [
 	_sniperTeam,
 	_technicalPatrol
 ];
+
+// randomly set behavior of ai on spawn
+_nearestMarker = [_marker, _markerList] call getNearestMarker;
+_randomMarker = [_marker, _markerList] call getRandomMarker;
 
 _behavior = [
 	["PATROL"],
@@ -108,13 +65,9 @@ _behavior = [
 	//["GARRISON"],
 	//["DEFEND"],
 	//["LOITER"]
-	//["OVERWATCH", _closestMkr ],
-	//["ATTACK", _nextClosestMkr]
+	["OVERWATCH", (_nearestMarker)], // overwatch nearest marker to unit
+	["ATTACK", (_randomMarker)]      // could be _randomMarker or _nextNearestMarker
 ];
-
-// testing this to implement a smart overwatch behavior
-// _closestMkr = [_markers, _this] call BIS_fnc_nearestPosition;
-// _nextClosestMkr = [_markers, _this] call BIS_fnc_nearestPosition;
 
 SpawnZone1 = [
 	[[(_encounter call BIS_fnc_selectRandom), "mkr_1", false], (_behavior call BIS_fnc_selectRandom)]
