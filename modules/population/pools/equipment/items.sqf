@@ -1,9 +1,25 @@
 /*
-@name: pools\equipment\items.sqf
-@description: pool of items to randomly select from
-@author: created by Devyn Spencer for http://github.com/devynspencer/valkyrie.Altis
-@params:
-@returns: attached to a function with #include
+
+  @name:
+    - pools\equipment\items.sqf
+
+  @author:
+    - created by Devyn Spencer for http://github.com/devynspencer/valkyrie.Altis
+
+  @description:
+    - collection of subpools
+    - each subpool holds an array of similar items
+
+  @params:
+    - N/A
+
+  @returns:
+    - attached to a function with #include
+
+  @examples:
+    _items = pl_items call BIS_fnc_selectRandom
+    _items = _items call BIS_fnc_selectRandom
+
 */
 
 switch _rarity do {
