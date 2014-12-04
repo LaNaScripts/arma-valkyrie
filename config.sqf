@@ -51,6 +51,13 @@ zonesMarket = [
 
 */
 
+// load pools
+#include "population\pools\vehicles.sqf";
+#include "population\pools\weapons.sqf"
+#include "population\pools\uniforms.sqf"
+// #include "population\pools\enemies.sqf"
+// ...
+
 // debug settings
 T8U_var_DEBUG               = true; // general Debug
 T8U_var_DEBUG_hints	        = true; // show Debug Hints

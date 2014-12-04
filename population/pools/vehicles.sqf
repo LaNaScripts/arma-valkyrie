@@ -31,14 +31,13 @@
 
 */
 
-/*
 // light ATVs, motorcycles, & bicycles
-_wheeledLight_c = [
+pl_veh_WheeledLight_c = [
   "C_Quadbike_01_F"
 ];
 
 // cars, SUVs & offroad trucks
-_wheeledMedium_c = [
+pl_veh_WheeledMedium_c = [
   "C_Hatchback_01_F",
   "C_Hatchback_01_sport_F", // reskin this, ugh
   "C_SUV_01_F",
@@ -49,25 +48,30 @@ _wheeledMedium_c = [
 ];
 
 // construction vehicles, buses, & large trucks
-_wheeledHeavy_c = [
+pl_veh_WheeledHeavy_c = [
 
 ];
 
 // military scout vehicles
-_wheeledLight_m = [
+pl_veh_WheeledLight_m = [
   "B_Quadbike_01_F",
   "O_Quadbike_01_F",
   "I_Quadbike_01_F",
-  "I_G_Quadbike_01_F"
-];
-
-// military cars & troop transports without armor
-_wheeledMedium_m = [
+  "I_G_Quadbike_01_F",
   "I_G_Offroad_01_armed_F"
 ];
 
+/*
+
+// military cars & troop transports without armor
+wheeledMedium_m = [
+
+];
+
+*/
+
 // regular supply trucks
-_supply_m = [
+pl_veh_Supply_m = [
   "O_Truck_02_covered_F",
   "I_Truck_02_covered_F",
   "O_Truck_02_transport_F",
@@ -75,7 +79,7 @@ _supply_m = [
 ];
 
 // supply trucks with specific cargo (medical, fuel, ammo)
-_supplySpecial_m = [
+pl_veh_SupplySpecial_m = [
   "I_Truck_02_Fuel_F",
   "O_Truck_02_Fuel_F",
   "I_Truck_02_medical_F",
@@ -85,23 +89,25 @@ _supplySpecial_m = [
   "I_MRAP_03_F"
 ];
 
+/*
+
 // heavier MRAPs & unarmed or disarmed APCs
-_armorLight_m = [
+armorLight_m = [
 
 ];
 
 // anti-air + armed APCs
-_armorMedium_m = [
+armorMedium_m = [
 
 ];
 
 // tanks
-_armorHeavy_m = [
+armorHeavy_m = [
 
 ];
 
 // civilian boats
-_boats_c = [
+boats_c = [
   "C_Rubberboat",
   "C_Boat_Civil_01_F",
   "C_Boat_Civil_01_police_F",
@@ -109,7 +115,7 @@ _boats_c = [
 ];
 
 // military boats
-_boats_m = [
+boats_m = [
   "B_Lifeboat",
   "O_Lifeboat",
   "B_SDV_01_F",
@@ -125,7 +131,7 @@ _boats_m = [
 ];
 
 // static weapon emplacements
-_static_m = [
+static_m = [
   "B_Mortar_01_F",
   "O_Mortar_01_F",
   "I_Mortar_01_F",
@@ -133,12 +139,12 @@ _static_m = [
 ];
 
 // civilian helicopters
-_helicopters_c = [
+helicopters_c = [
   "C_Heli_Light_01_civil_F" // make "locked" skins available
 ];
 
 // military helicopters
-_helicopters_m = [
+helicopters_m = [
   "B_Heli_Light_01_F",
   "O_Heli_Light_02_unarmed_F",
   "I_Heli_light_03_unarmed_F"
@@ -146,13 +152,15 @@ _helicopters_m = [
 
 // civilian planes
 // - find reskin of military plane or standalone
-_planes_c = [
+planes_c = [
 
 ];
 
 // military planes
-_planes_m = [
+planes_m = [
   "B_Plane_CAS_01_F",
   "O_Plane_CAS_02_F",
   "I_Plane_Fighter_03_CAS_F"
 ];
+
+*/

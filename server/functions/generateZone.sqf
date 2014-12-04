@@ -84,9 +84,9 @@ SpawnZone1 = [
 
 ["SpawnZone1", "mkr_1", "EAST", "ANY", 700] spawn T8U_fnc_Zone;
 
-_rand = floor random 3;
+_rand = floor random 2;
 for "_i" from 0 to _rand do {
-	["mkr_1"] call spawnVehicle;
+	["mkr_1"] call generateVehicle;
 };
 
 SpawnZone2 = [
@@ -95,9 +95,9 @@ SpawnZone2 = [
 
 ["SpawnZone2", "mkr_2", "EAST", "ANY", 700] spawn T8U_fnc_Zone;
 
-_rand = floor random 3;
+_rand = floor random 2;
 for "_i" from 0 to _rand do {
-	["mkr_2"] call spawnVehicle;
+	["mkr_2"] call generateVehicle;
 };
 
 SpawnZone3 = [
@@ -106,9 +106,9 @@ SpawnZone3 = [
 
 ["SpawnZone3", "mkr_3", "EAST", "ANY", 700] spawn T8U_fnc_Zone;
 
-_rand = floor random 3;
+_rand = floor random 2;
 for "_i" from 0 to _rand do {
-	["mkr_3"] call spawnVehicle;
+	["mkr_3"] call generateVehicle;
 };
 
 SpawnZone4 = [
@@ -117,9 +117,9 @@ SpawnZone4 = [
 
 ["SpawnZone4", "mkr_4", "EAST", "ANY", 700] spawn T8U_fnc_Zone;
 
-_rand = floor random 3;
+_rand = floor random 2;
 for "_i" from 0 to _rand do {
-	["mkr_4"] call spawnVehicle;
+	["mkr_4"] call generateVehicle;
 };
 
 SpawnZone5 = [
@@ -128,7 +128,7 @@ SpawnZone5 = [
 
 ["SpawnZone5", "mkr_5", "EAST", "ANY", 700] spawn T8U_fnc_Zone;
 
-_rand = floor random 3;
+_rand = floor random 2;
 for "_i" from 0 to _rand do {
-	["mkr_5"] call spawnVehicle;
+	["mkr_5"] call generateVehicle;
 };

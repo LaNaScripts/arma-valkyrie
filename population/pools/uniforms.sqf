@@ -6,22 +6,16 @@
 @returns: attached to a function with #include
 */
 
-/*
-private [
-  "_balaclavas",
-  "_shemags",
-];
-
-_shemags = [
+pl_uni_shemags = [
   "H_Shemag_khk",
   "H_Shemag_tan",
   "H_Shemag_olive",
   "H_Shemag_olive_hs",
   "H_ShemagOpen_tan",
   "H_ShemagOpen_khk"
-] call BIS_fnc_selectRandom;
+];
 
-_balaclavas = [
+pl_uni_balaclavas = [
   "Kio_Balaclava_blk",
   "Kio_Balaclava_blkSkull",
   "Kio_Balaclava_grn",
@@ -30,15 +24,15 @@ _balaclavas = [
   "Kio_Balaclava_hex",
   "Kio_Balaclava_wcam",
   "Kio_Balaclava_urbcam"
-] call BIS_fnc_selectRandom;
+];
 
-_uniformsGhillie = [
+pl_uni_uniformsGhillie = [
   "U_O_GhillieSuit",
   "U_B_GhillieSuit",
   "U_I_GhillieSuit"
-] call BIS_fnc_selectRandom;
+];
 
-_uniformsGuerilla = [
+pl_uni_uniformsGuerilla = [
   "U_BG_leader",
   "U_BG_Guerilla1_1",
   "U_BG_Guerilla2_1",
@@ -47,18 +41,18 @@ _uniformsGuerilla = [
   "U_BG_Guerilla3_1",
   "U_BG_Guerilla3_2",
   "U_BG_Guerrilla_6_1"
-] call BIS_fnc_selectRandom;
+];
 
-_uniformsCoveralls
+pl_uni_uniformsCoveralls
   "U_I_pilotCoveralls",
   "U_B_PilotCoveralls",
   "U_B_HeliPilotCoveralls",
   "U_O_PilotCoveralls",
   "U_B_HeliPilotCoveralls",
   "U_I_HeliPilotCoveralls"
-] call BIS_fnc_selectRandom;
+];
 
-_uniformsCivilian = [
+pl_uni_uniforms_c = [
   "U_C_FishermanOveralls",
   "U_C_WorkerOveralls",
   "U_C_Poor_1",
@@ -73,69 +67,69 @@ _uniformsCivilian = [
   "U_C_Scavenger_2", // test
   "U_C_Scavenger_1", // test
   "U_C_Farmer"
-] call BIS_fnc_selectRandom;
+];
 
-_uniformsOpfor = [
+pl_uni_uniforms_o = [
   "U_O_CombatUniform_ocamo",
   "U_O_SpecopsUniform_ocamo"
-] call BIS_fnc_selectRandom;
+];
 
-_uniformsOpforUrban = [
+pl_uni_uniformsUrban_o = [
   "U_B_PilotCoveralls",
   "U_I_pilotCoveralls",
   "U_O_CombatUniform_oucamo"
-] call BIS_fnc_selectRandom;
+];
 
-_helmetsBreather = [
+pl_uni_helmetsBreather = [
   "H_PilotHelmetFighter_B",
   "H_PilotHelmetFighter_O",
   "H_PilotHelmetFighter_I"
-] call BIS_fnc_selectRandom;
+];
 
-_helmetsClosed = [
+pl_uni_helmetsClosed = [
   "H_CrewHelmetHeli_B",
   "H_CrewHelmetHeli_O",
   "H_CrewHelmetHeli_I"
-] call BIS_fnc_selectRandom;
+];
 
-_helmetsOpfor = [
+pl_uni_helmets_o = [
   "H_HelmetO_ocamo",
   "H_HelmetLeaderO_ocamo",
   "H_HelmetLeaderO_oucamo",
   "H_HelmetSpecO_ocamo",
   "H_HelmetSpecO_blk"
-] call BIS_fnc_selectRandom;
+];
 
-_vestsRebreather = [
-  "V_RebreatherB",
-  "V_RebreatherIR",
-  "V_RebreatherIA"
-] call BIS_fnc_selectRandom;
-
-_helmetsOpforUrban = [
+pl_uni_helmetsUrban_o = [
   "H_HelmetLeaderO_oucamo",
   "H_HelmetO_oucamo",
   "H_HelmetSpecO_blk"
-] call BIS_fnc_selectRandom;
+];
 
-_vestsLight = [
+pl_uni_vestsRebreather = [
+  "V_RebreatherB",
+  "V_RebreatherIR",
+  "V_RebreatherIA"
+];
+
+pl_uni_vestsLight = [
   "V_HarnessO_brn",
   "V_HarnessOGL_brn",
   "V_HarnessO_gry",
   "V_HarnessOGL_gry",
   "V_HarnessOSpec_brn",
   "V_HarnessOSpec_gry"
-] call BIS_fnc_selectRandom;
+];
 
-_vestsMedium = [
+pl_uni_vestsMedium = [
   "V_TacVest_blk",
   "V_TacVest_brn",
   "V_TacVest_camo",
   "V_TacVest_oli",
   "V_TacVest_blk_POLICE"
-] call BIS_fnc_selectRandom;
+];
 
-_vestsHeavy = [
+pl_uni_vestsHeavy = [
   "V_PlateCarrier1_blk",
   "V_PlateCarrier_Kerry",
   "V_PlateCarrierL_CTRG",
@@ -143,4 +137,4 @@ _vestsHeavy = [
   "V_I_G_resistanceLeader_F",
   "V_PlateCarrierIA2_dgtl",
   "V_PlateCarrierIA1_dgtl"
-] call BIS_fnc_selectRandom;
+];

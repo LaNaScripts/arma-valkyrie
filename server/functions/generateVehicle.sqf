@@ -11,40 +11,51 @@ if (!isServer) exitWith {};
 private [
   "_marker",
   "_pos",
-  "_type",
-  "_num",
+  "_vehicleClass",
   "_vehicleType",
   "_vehicle",
   "_hitPoint"
 ];
 
 _marker = _this select 0;
-_type = 0;  //test due to undefined variable errors..
+//_pos = [_markerPos, 2, 25, ( if (_type == 1) then { 2 } else { 5 } ), 0, 60 * (pi / 180), 0, [], [_markerPos]] call BIS_fnc_findSafePos;
+_pos = getMarkerPos _marker;
 
 if (count _this > 1) then {
-  _vehicleType = _this select 1;
-
-  switch (true) do {
-    case ({_vehicleType == _x} count civilianVehicles > 0):       { _type = 0 };
-    case ({_vehicleType == _x} count lightMilitaryVehicles > 0):  { _type = 1 };
-    case ({_vehicleType == _x} count mediumMilitaryVehicles > 0): { _type = 2 };
-  };
+  _vehicleType = [_this, 1, objNull, ""] call BIS_fnc_param;
 } else {
-  _num = random 100;
+  _vehicleClass = [
+    pl_veh_WheeledLight_c,
+    pl_veh_WheeledMedium_c,
+    pl_veh_WheeledHeavy_c,
+    pl_veh_WheeledLight_m,
+    pl_veh_Supply_m,
+    pl_veh_SupplySpecial_m
+  ] call BIS_fnc_selectRandom;
 
+  if (count _vehicleClass > 1) then {
+    _vehicleType = _vehicleClass call BIS_fnc_selectRandom;
+  } else {
+    _vehicleType = "C_Quadbike_01_F";
+    hint "Vehicle spawn error, check pools\vehicles.sqf";
+    hint "Spawning a quadbike instead ...";
+  };
+
+  /*
+
+  // eventually replace random spawns with weighted spawns
+  // with a low chance to spawn heavier armor or air vehicles
   switch (true) do {
     case (_num < 15): { _vehicleType = mediumMilitaryVehicles call BIS_fnc_selectRandom; _type = 2 };
     case (_num < 50): { _vehicleType = lightMilitaryVehicles call BIS_fnc_selectRandom; _type = 1 };
     default           { _vehicleType = civilianVehicles call BIS_fnc_selectRandom; _type = 0 };
   };
+
+  */
 };
 
-//_pos = [_markerPos, 2, 25, ( if (_type == 1) then { 2 } else { 5 } ), 0, 60 * (pi / 180), 0, [], [_markerPos]] call BIS_fnc_findSafePos;
-// diabled as a test. might break other features
-_pos = getMarkerPos _marker;
-
-//Car Initialization
 _vehicle = createVehicle [_vehicleType, _pos, [], 200, "None"];
+
 //_vehicle setDamage (random 0.5); // setDamage must always be called before vehicleSetup
 
 /*
