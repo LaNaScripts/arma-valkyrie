@@ -3,30 +3,22 @@ class Mission
 {
 	addOns[]=
 	{
-		"A3_Characters_F_OPFOR",
-		"a3_characters_f",
-		"A3_Modules_F_Curator_Curator",
-		"A3_Soft_F_MRAP_02",
-		"aia_misc3_config",
-		"FHQ_Accessories",
-		"aia_misc_e_config",
-		"hlcweapons_aks",
-		"hlcweapons_ar15",
 		"aia_takistan_config",
+		"A3_Modules_F_Curator_Curator",
 		"A3_Characters_F_BLUFOR",
-		"A3_Soft_F_Gamma_Offroad",
-		"a3_soft_f_offroad_01",
-		"A3_Air_F_Heli_Heli_Light_01"
+		"a3_characters_f"
 	};
 	addOnsAuto[]=
 	{
 		"A3_Modules_F_Curator_Curator",
-		"A3_Air_F_Heli_Heli_Light_01",
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
 		"aia_takistan_config"
 	};
-	randomSeed=15789834;
+	randomSeed=4013229;
 	class Intel
 	{
+		timeOfChanges=1800.0002;
 		startWeather=0.40000001;
 		startWind=0.1;
 		startWaves=0.1;
@@ -37,7 +29,7 @@ class Mission
 		year=2009;
 		day=28;
 		hour=16;
-		minute=35;
+		minute=20;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
@@ -52,13 +44,13 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4873.4731,107.14483,9726.0303};
+					position[]={7586.6812,288.08591,1848.7961};
 					class args
 					{
 						items=4;
 						class Item0
 						{
-							value="";
+							value="s1";
 							parentCls="ModuleCurator_F";
 							typeName="Owner";
 						};
@@ -93,19 +85,20 @@ class Mission
 		};
 		class Item1
 		{
-			side="CIV";
+			side="WEST";
 			class Vehicles
 			{
 				items=1;
 				class Item0
 				{
-					position[]={3537.3406,123.52752,9371.1475};
+					position[]={7539.2183,287.84369,1866.79};
 					id=1;
-					side="CIV";
-					vehicle="C_Heli_Light_01_civil_F";
+					side="WEST";
+					vehicle="B_sniper_F";
 					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
+					text="s1";
 				};
 			};
 		};
@@ -115,58 +108,53 @@ class Mission
 		items=5;
 		class Item0
 		{
-			position[]={3625.1545,151.79875,8605.3184};
+			position[]={7890.0615,296.04001,1635.2073};
 			name="mkr_1";
-			text="mkr_1";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorEAST";
-			a=300;
-			b=300;
+			a=100;
+			b=100;
 		};
 		class Item1
 		{
-			position[]={4519.5986,131.97246,9426.6895};
-			name="mkr_2";
-			text="mkr_2";
+			position[]={8088.3442,296.04001,1835.6339};
+			name="mkr_3";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorEAST";
-			a=300;
-			b=300;
+			a=100;
+			b=100;
 		};
 		class Item2
 		{
-			position[]={3030.9778,60.439999,9882.9258};
-			name="mkr_3";
-			text="mkr_3";
+			position[]={7810.2051,298.73758,1865.8027};
+			name="mkr_2";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorEAST";
-			a=300;
-			b=300;
+			a=100;
+			b=100;
 		};
 		class Item3
 		{
-			position[]={5024.3364,122.3404,9458.2363};
-			name="mkr_4";
-			text="mkr_4";
+			position[]={8175.7197,294.4584,2156.5789};
+			name="mkr_5";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorEAST";
-			a=200;
-			b=200;
+			a=100;
+			b=100;
 		};
 		class Item4
 		{
-			position[]={5639.6157,81.937767,8946.4854};
-			name="mkr_5";
-			text="mkr_5";
+			position[]={8338.8389,296.04001,1905.9769};
+			name="mkr_4";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorEAST";
-			a=200;
-			b=200;
+			a=100;
+			b=100;
 		};
 	};
 };
@@ -180,7 +168,7 @@ class Intro
 	{
 		"aia_takistan_config"
 	};
-	randomSeed=16461069;
+	randomSeed=10277816;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
@@ -209,7 +197,7 @@ class OutroWin
 	{
 		"aia_takistan_config"
 	};
-	randomSeed=11417062;
+	randomSeed=16171287;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
@@ -238,7 +226,7 @@ class OutroLoose
 	{
 		"aia_takistan_config"
 	};
-	randomSeed=8559978;
+	randomSeed=15135678;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
