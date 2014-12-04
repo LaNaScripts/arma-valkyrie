@@ -19,6 +19,7 @@ Therefore, in order to provide a high-quality gameplay experience, plugins and s
 Considering how *particular* Arma can be during those times that you don't quite have access to a supercomputer (it happens), it is my goal to provide players and server admins with a set of high-quality management tools that are easy to use and implement.
 
 ## Content
+The following provide a brief synopsis of features and possibilities the eventual modules will provide when fully-formed.
 
 ### [Optimized Maps](#)
 Explore an entirely new, feature-rich environment in the sands of Takistan.
