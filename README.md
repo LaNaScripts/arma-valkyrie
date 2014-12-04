@@ -5,11 +5,18 @@ This project is a collection of dynamic Arma 3 modules designed to create a dyna
 ## Gameplay
 Enter the role of a lone survivor lost deep within enemy lines. Overcome an overwhelming enemy force using only your wits and the resources around you (though if one of those resources *happens* to be an enemy heavy weapons cache, so be it).
 
-## Core Elements
-The overall goal of this project is to provide players with an enormous open world platform while retaining the small details that make a game interesting. Technically speaking, this requires a well-designed codebase that leverages dynamic spawns and limits placement of static elements for longer than absolutely necessary. 
+## Plugins & Optimization
+The overall goal of this project is to provide players with an enormous open world platform while retaining the small details that make a game interesting. Technically speaking, this requires a well-designed codebase that leverages dynamic spawns and limits placement of static elements for longer than absolutely necessary.
 
-## Modules
-Specifically, the project is broken into many small and medium sized modules which can be endlessly combined to deliver a highly dynamic environment. Check out the [module development timeline](/development/timeline.md) for the status of each module.
+Therefore, in order to provide a high-quality gameplay experience, plugins and server optimizations will be developed as necessary. Plans for the project currently include:
+
+* A streamlined, [uniform module structure](#) focusing on logically organizing the key components to maximize acclimation and reusability
+* [Modernized maps](#optimized-maps), for both existing BIS favorites as well as completely new maps featuring new terrain types
+* [Object caching](#) Map redesigns will focus on replacing (often unnecessary) 'hard-coded' objects with dynamically-generated objects and developing support for caching of entire environments to conserve resources.
+* [Population caching](#population-caching) of unoccupied zones. An expansion of the above, where enemy behaviors, morale, casualities, and tactics will be cached in addition to object data such as class types, object states, and positions
+* [Language extensions](#), providing support for outside languages and frameworks such as json/yaml/nodejs in order to increase code reuse, modularity, and flexibility.
+
+Considering how *particular* Arma can be during those times that you don't quite have access to a supercomputer (it happens), it is my goal to provide players and server admins with a set of high-quality management tools that are easy to use and implement.
 
 ### [Optimized Maps](#)
 Explore an entirely new, feature-rich environment in the sands of Takistan.
