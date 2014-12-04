@@ -16,7 +16,7 @@ Therefore, in order to provide a high-quality gameplay experience, plugins and s
 * [Population caching](#population-caching) of unoccupied zones. An expansion of the above, where enemy behaviors, morale, casualities, and tactics will be cached in addition to object data such as class types, object states, and positions
 * [Language extensions](#), providing support for outside languages and frameworks such as json/yaml/nodejs in order to increase code reuse, modularity, and flexibility.
 * [Hash ID generation](#) for object validation, i.e. [this](http://killzonekid.com/arma-extension-hash_id-dll/)
-* [Database drivers & support](#) reliable persistent worlds and scalable retrieval of player data.
+* [Database support](#) reliable persistent worlds and scalable (or [less-than](https://github.com/newtondev/inidb-linux)) retrieval of player data.
 * [Weather patterns extension](#) offload calculations of weather patterns onto a more efficient platform
 * [Populations extension](#) offload calculations of group dynamics, unit behaviors, and role loadouts to a more efficient platform
 
