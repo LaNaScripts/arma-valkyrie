@@ -11,6 +11,8 @@ waitUntil {!isNil "T8U_var_useHC"};
 private [
 	"_exit",
 	"_encounter",
+	"_markerList",
+	"_rolesList",
 	"_behavior",
 	"_nearestMarker",
 	"_randomMarker"
@@ -72,14 +74,14 @@ _behavior = [
 	["PATROL_AROUND"],
 	["PATROL_GARRISON"],
 	//["GARRISON"],
-	//["DEFEND"],
-	//["LOITER"]
+	//["DEFEND"], // possibly causing problems
+	//["LOITER"],
 	["OVERWATCH", (_nearestMarker)], // overwatch nearest marker to unit
 	["ATTACK", (_randomMarker)]      // could be _randomMarker or _nextNearestMarker
 ];
 
 SpawnZone1 = [
-	[[(_encounter call BIS_fnc_selectRandom), "mkr_1", false], (_behavior call BIS_fnc_selectRandom)]
+	[[(_encounter call BIS_fnc_selectRandom), "mkr_1", false, EAST, "generateLoadout"], (_behavior call BIS_fnc_selectRandom)]
 ];
 
 ["SpawnZone1", "mkr_1", "EAST", "ANY", 700] spawn T8U_fnc_Zone;
@@ -90,7 +92,7 @@ for "_i" from 0 to _rand do {
 };
 
 SpawnZone2 = [
-	[[(_encounter call BIS_fnc_selectRandom), "mkr_2", false], (_behavior call BIS_fnc_selectRandom)]
+	[[(_encounter call BIS_fnc_selectRandom), "mkr_2", false, EAST, "generateLoadout"], (_behavior call BIS_fnc_selectRandom)]
 ];
 
 ["SpawnZone2", "mkr_2", "EAST", "ANY", 700] spawn T8U_fnc_Zone;
@@ -101,7 +103,7 @@ for "_i" from 0 to _rand do {
 };
 
 SpawnZone3 = [
-	[[(_encounter call BIS_fnc_selectRandom), "mkr_3", false], (_behavior call BIS_fnc_selectRandom)]
+	[[(_encounter call BIS_fnc_selectRandom), "mkr_3", false, EAST, "generateLoadout"], (_behavior call BIS_fnc_selectRandom)]
 ];
 
 ["SpawnZone3", "mkr_3", "EAST", "ANY", 700] spawn T8U_fnc_Zone;
@@ -112,7 +114,7 @@ for "_i" from 0 to _rand do {
 };
 
 SpawnZone4 = [
-	[[(_encounter call BIS_fnc_selectRandom), "mkr_4", false], (_behavior call BIS_fnc_selectRandom)]
+	[[(_encounter call BIS_fnc_selectRandom), "mkr_4", false, EAST, "generateLoadout"], (_behavior call BIS_fnc_selectRandom)]
 ];
 
 ["SpawnZone4", "mkr_4", "EAST", "ANY", 700] spawn T8U_fnc_Zone;
@@ -123,7 +125,7 @@ for "_i" from 0 to _rand do {
 };
 
 SpawnZone5 = [
-	[[(_encounter call BIS_fnc_selectRandom), "mkr_5", false ], (_behavior call BIS_fnc_selectRandom)]
+	[[(_encounter call BIS_fnc_selectRandom), "mkr_5", false, EAST, "generateLoadout"], (_behavior call BIS_fnc_selectRandom)]
 ];
 
 ["SpawnZone5", "mkr_5", "EAST", "ANY", 700] spawn T8U_fnc_Zone;

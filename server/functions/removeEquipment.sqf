@@ -8,11 +8,16 @@
   @returns:
 
 */
+private [
+  "_unit"
+];
 
-removeHeadgear _this:
-removeGoggles _this;
-removeVest _this;
-removeBackpack _this;
-removeUniform _this;
-removeAllWeapons _this:
-removeAllAssignedItems _this;
+_unit = [_this, 0, _this, ""] call BIS_fnc_param;
+
+removeHeadgear _unit:
+removeGoggles _unit;
+removeVest _unit;
+removeBackpack _unit;
+removeUniform _unit;
+removeAllWeapons _unit:
+removeAllAssignedItems _unit;

@@ -14,7 +14,7 @@ enableSaving [false, false];
 // compile global functions
 // setLoadout        = compile preProcessFileLineNumbers "server\functions\setLoadout.sqf";
 refillPrimaryAmmo = compile preProcessFileLineNumbers "server\functions\refillPrimaryAmmo.sqf";
-// removeEquipment   = compile preProcessFileLineNumbers "server\functions\removeEquipment.sqf";
+removeEquipment   = compile preProcessFileLineNumbers "server\functions\removeEquipment.sqf";
 // setLoadout        = compile preProcessFileLineNumbers "server\functions\setLoadout.sqf";
 // refillAmmo        = compile preProcessFileLineNumbers "server\functions\refillPrimaryAmmo.sqf";
 // cacheZone         = compile preProcessFileLineNumbers "server\functions\cacheZone.sqf";
@@ -25,7 +25,7 @@ generateVehicle = compile preProcessFileLineNumbers "server\functions\generateVe
 // generateObject    = compile preProcessFileLineNumbers "server\functions\generateObject.sqf";
 // generateVehicle   = compile preProcessFileLineNumbers "server\functions\generateVehicle.sqf";
 // generateRarity    = compile preProcessFileLineNumbers "server\functions\generateRarity.sqf";
-// generateLoadout   = compile preProcessFileLineNumbers "server\functions\generateLoadout.sqf";
+generateLoadout   = compile preProcessFileLineNumbers "server\functions\generateLoadout.sqf";
 // generateContents  = compile preProcessFileLineNumbers "server\functions\generateContents.sqf";
 // generateZone      = compile preProcessFileLineNumbers "server\functions\generateZone.sqf";
 

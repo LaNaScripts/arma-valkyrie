@@ -18,17 +18,16 @@
 */
 _this spawn {
   private [
-    "_unit",
-    "_rolesList",
     "_role",
-    "_roleHeadWear",
-    "_roleFaceWear",
+    "_rolesList",
+    "_roleHeadgear",
+    "_roleGoggles",
     "_roleUniforms",
     "_roleVests",
     "_roleBackpacks",
     "_roleWeapons",
-    "_headwear",
-    "_facewear",
+    "_headgear",
+    "_goggles",
     "_uniform",
     "_vest",
     "_backpack",
@@ -44,12 +43,21 @@ _this spawn {
     "smokers"
   ];
 
-  _role = [_this, 1, (_rolesList call BIS_fnc_selectRandom). ""] call BIS_fnc_param;
+  removeHeadgear _this;
+  removeGoggles _this;
+  removeVest _this;
+  removeBackpack _this;
+  removeUniform _this;
+  removeAllWeapons _this;
+  removeAllAssignedItems _this;
+
+  //_role = [_this, 1, (_rolesList call BIS_fnc_selectRandom), []] call BIS_fnc_param;
+  _role = _rolesList call BIS_fnc_selectRandom;
 
   call {
     if (_role == "conscripts") exitWith {
-      _roleHeadWear  = [pl_uni_shemags];
-      _roleFaceWear  = [];
+      _roleHeadgear  = [pl_uni_shemags];
+      _roleGoggles   = [];
       _roleUniforms  = [pl_uni_uniformsCoveralls];
       _roleVests     = [];
       _roleBackpacks = [];
@@ -57,8 +65,8 @@ _this spawn {
     };
 
     if (_role == "grunts") exitWith {
-      _roleHeadWear  = [pl_uni_shemags, pl_uni_helmets_o];
-      _roleFaceWear  = [];
+      _roleHeadgear  = [pl_uni_shemags, pl_uni_helmets_o];
+      _roleGoggles   = [];
       _roleUniforms  = [pl_uni_uniforms_o];
       _roleVests     = [pl_uni_vestsMedium];
       _roleBackpacks = [];
@@ -66,17 +74,17 @@ _this spawn {
     };
 
     if (_role == "vassals") exitWith {
-      _roleHeadWear  = [pl_uni_helmetsClosed, pl_uni_helmetsUrban_o];
-      _roleFaceWear  = [];
-      _roleUniforms  = [pl_uni_uniformsUrban_o, U_O_SpecopsUniform_ocamo];
+      _roleHeadgear  = [pl_uni_helmetsClosed, pl_uni_helmetsUrban_o];
+      _roleGoggles   = [];
+      _roleUniforms  = [pl_uni_uniformsUrban_o];
       _roleVests     = [pl_uni_vestsHeavy];
       _roleBackpacks = [];
       _roleWeapons   = [pl_weaponsRifle, pl_weaponsLauncherRifle, pl_weaponsLMG];
     };
 
     if (_role == "hunters") exitWith {
-      _roleHeadWear  = [];
-      _roleFaceWear  = [];
+      _roleHeadgear  = [];
+      _roleGoggles   = [];
       _roleUniforms  = [pl_uni_uniformsGhillie];
       _roleVests     = [pl_uni_vestsLight];
       _roleBackpacks = [];
@@ -84,8 +92,8 @@ _this spawn {
     };
 
     if (_role == "heavies") exitWith {
-      _roleHeadWear  = [pl_uni_helmetsBreather];
-      _roleFaceWear  = [];
+      _roleHeadgear  = [pl_uni_helmetsBreather];
+      _roleGoggles   = [];
       _roleUniforms  = [pl_uni_uniformsUrban_o, pl_uni_uniforms_o];
       _roleVests     = [pl_uni_vestsRebreather];
       _roleBackpacks = [];
@@ -93,8 +101,8 @@ _this spawn {
     };
 
     if (_role == "smokers") exitWith {
-      _roleHeadWear  = [pl_uni_helmetsBreather];
-      _roleFaceWear  = [];
+      _roleHeadgear  = [pl_uni_helmetsBreather];
+      _roleGoggles   = [];
       _roleUniforms  = [pl_uni_uniforms_o, pl_uni_uniformsCoveralls];
       _roleVests     = [pl_uni_vestsRebreather];
       _roleBackpacks = [];
@@ -102,19 +110,19 @@ _this spawn {
     };
   };
 
-  if (count _roleHeadWear > 0) then {
-    _headWear = _roleHeadWear call BIS_fnc_selectRandom;
-    _this addHeadWear _headWear;
+  if (count _roleHeadgear > 0) then {
+    _headgear = _roleHeadgear call BIS_fnc_selectRandom;
+    _this addHeadgear _headgear;
   };
 
-  if (count _roleFaceWear > 0) then {
-    _faceWear = _roleFaceWear call BIS_fnc_selectRandom;
-    _this addFaceWear _faceWear;
+  if (count _roleGoggles > 0) then {
+    _goggles = _roleGoggles call BIS_fnc_selectRandom;
+    _this addGoggles _goggles;
   };
 
   if (count _roleUniforms > 0) then {
     _uniform = _roleUniforms call BIS_fnc_selectRandom;
-    _this addUniform _uniform;
+    _this forceAddUniform _uniform;
   };
 
   if (count _roleVests > 0) then {
