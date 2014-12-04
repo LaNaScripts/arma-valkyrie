@@ -17,6 +17,8 @@ Therefore, in order to provide a high-quality gameplay experience, plugins and s
 * [Language extensions](#), providing support for outside languages and frameworks such as json/yaml/nodejs in order to increase code reuse, modularity, and flexibility.
 * [Hash ID generation](#) for object validation, i.e. [this](http://killzonekid.com/arma-extension-hash_id-dll/)
 * [Database drivers & support](#) reliable persistent worlds and scalable retrieval of player data.
+* [Weather patterns extension](#) offload calculations of weather patterns onto a more efficient platform
+* [Populations extension](#) offload calculations of group dynamics, unit behaviors, and role loadouts to a more efficient platform
 
 Considering how *particular* Arma can be during those times that you don't quite have access to a supercomputer (it happens), it is my goal to provide players and server admins with a set of high-quality management tools that are easy to use and implement.
 
