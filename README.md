@@ -36,6 +36,9 @@ Populations are determined using a list of encounters, each with an extensive ar
 ### [Dynamic tasks](#)
 Receive a randomly generated task upon approaching a place of interest marker (?). Available tasks are based on encounters generated within an area, and are intended to be dynamic while remaining in a similar context to the other elements of an encounter.
 
+### [Virtual Training](#)
+Make sure you're ready for the wastes with an extensive virtual training environment, built to showcase all aspects of valkyrie and its supporting modules.
+
 ### [resource system](#)
 Salvage resources from the environment to feed your ambitions! Trade with ai merchants for [construction](#) materials, vehicles, [food](#) & supplies, repairs, weapon upgrades, or [mercenaries](#).
 
