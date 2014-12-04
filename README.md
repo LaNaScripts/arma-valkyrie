@@ -15,6 +15,8 @@ Therefore, in order to provide a high-quality gameplay experience, plugins and s
 * [Object caching](#) Map redesigns will focus on replacing (often unnecessary) 'hard-coded' objects with dynamically-generated objects and developing support for caching of entire environments to conserve resources.
 * [Population caching](#population-caching) of unoccupied zones. An expansion of the above, where enemy behaviors, morale, casualities, and tactics will be cached in addition to object data such as class types, object states, and positions
 * [Language extensions](#), providing support for outside languages and frameworks such as json/yaml/nodejs in order to increase code reuse, modularity, and flexibility.
+* [Hash ID generation](#) for object validation, i.e. [this](http://killzonekid.com/arma-extension-hash_id-dll/)
+* [Database drivers & support](#) reliable persistent worlds and scalable retrieval of player data.
 
 Considering how *particular* Arma can be during those times that you don't quite have access to a supercomputer (it happens), it is my goal to provide players and server admins with a set of high-quality management tools that are easy to use and implement.
 
