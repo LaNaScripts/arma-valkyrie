@@ -31,6 +31,11 @@ What's your next adventure look like? Spend less time in the editor and more tim
 * random supply airdrops - supply drops spawn randomly in player inhabited zones
 * supply chasers - enemies are interested in those supplies too!
 
+Populations are determined using a list of encounters, each with an extensive array of enemies, rewards, tasks, events, and unlockable support call-ins that can potentially be spawned.
+
+### [Dynamic tasks](#)
+Receive a randomly generated task upon approaching a place of interest marker (?). Available tasks are based on encounters generated within an area, and are intended to be dynamic while remaining in a similar context to the other elements of an encounter.
+
 ### [resource system](#)
 Salvage resources from the environment to feed your ambitions! Trade with ai merchants for [construction](#) materials, vehicles, [food](#) & supplies, repairs, weapon upgrades, or [mercenaries](#).
 
