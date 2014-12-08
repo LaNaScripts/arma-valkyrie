@@ -1,29 +1,17 @@
 /*
-  @name: init.sqf
-  @description: initializes all server activities
-  @author: created by Devyn Spencer for http://github.com/devynspencer/valkyrie.Altis
-  @params: []
-  @returns: begins client & server processes necessary for delivery of core gameplay elements
+
+  file: 'init.sqf'
+  author: devyn spencer (http://github.com/devynspencer)
+  description:
+    - initializes core processes and functions
+    - initializes modules included in 'server\config.sqf'
+
 */
 
-// list the modules to be loaded here
-_modulesArray = [
-    population
-    // territory
-    // crafting
-    // construction
-]
+// run init processes
+call preprocessFileLineNumbers "functions\setRoot.sqf"); // setup mission root
+call preprocessFileLineNumbers "compile.sqf"); // compile functions
+call preprocessFileLineNumbers "config.sqf"); // compile configuration values
 
-// load modules listed in _modulesArray
-switch (in _modulesArray) do {
-
-    // zone population module
-    case 'population': {
-        spawn initPopulation;
-    }
-
-    // always load the core module
-    default {
-        spawn initBase;
-    }
-}
+// run core processes
+[] execVM "server\functions\geZone.sqf"; // generate zone populations
