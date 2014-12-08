@@ -6,8 +6,6 @@
   @returns:
 */
 
-if (!isServer) exitWith {};
-
 private [
   "_objPos",
   "_objClass",

@@ -7,17 +7,17 @@
 */
 
 // compile asset pools
-call compileFinal preprocessFileLineNumbers (MISSION_ROOT + "population\pools\ammo.sqf");
-call compileFinal preprocessFileLineNumbers (MISSION_ROOT + "population\pools\container.sqf");
-call compileFinal preprocessFileLineNumbers (MISSION_ROOT + "population\pools\encounters.sqf");
-call compileFinal preprocessFileLineNumbers (MISSION_ROOT + "population\pools\items.sqf");
-call compileFinal preprocessFileLineNumbers (MISSION_ROOT + "population\pools\objectives.sqf");
-call compileFinal preprocessFileLineNumbers (MISSION_ROOT + "population\pools\objects.sqf");
-call compileFinal preprocessFileLineNumbers (MISSION_ROOT + "population\pools\roles.sqf");
-call compileFinal preprocessFileLineNumbers (MISSION_ROOT + "population\pools\uniforms.sqf");
-call compileFinal preprocessFileLineNumbers (MISSION_ROOT + "population\pools\vehicles.sqf");
-call compileFinal preprocessFileLineNumbers (MISSION_ROOT + "population\pools\weapons.sqf");
-call compileFinal preprocessFileLineNumbers (MISSION_ROOT + "population\pools\zones.sqf");
+[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\ammo.sqf");
+[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\container.sqf");
+[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\encounters.sqf");
+[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\items.sqf");
+[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\objectives.sqf");
+[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\objects.sqf");
+[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\roles.sqf");
+[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\uniforms.sqf");
+[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\vehicles.sqf");
+[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\weapons.sqf");
+[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\zones.sqf");
 
 // compile functions
 getContainer     = compile preProcessFileLineNumbers (MISSION_ROOT + "server\functions\getContainer.sqf");
