@@ -8,7 +8,6 @@
 
 private [
   "_nearest",
-  "_break",
   "_array",
   "_pos",
   "_i",

@@ -8,7 +8,7 @@
 
 // temporary
 private [
-	"_markerList",
+	"_markerList"
 ];
 
 _markerList = [

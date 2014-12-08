@@ -9,7 +9,7 @@
 v_vehicles = [
   [
     [ // tier 1 (common)
-      "C_Quadbike_01_F"
+      "C_Quadbike_01_F",
       "C_Hatchback_01_F",
       "C_Hatchback_01_sport_F", // reskin this, ugh
       "C_Van_01_box_F",

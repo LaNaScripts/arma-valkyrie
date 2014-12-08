@@ -6,48 +6,48 @@
 
 */
 
-//if (!isServer) exitWith {};
-
 private [
   "_objPos",
   "_objClass",
   "_obj",
   "_contents",
-  "_item",
-  "_itemClass",
-  "_itemPool",
-  //"_adjustZ",
-  //"_pos"
+  "_itemClass"
 ];
 
 _objPos = _this select 0;
-_objClass = _containers call BIS_fnc_selectRandom;
+_objClass = v_containers call BIS_fnc_selectRandom;
 _obj = createVehicle [_objClass, _objPos, [], 50, "None"];
 _contents = floor random 5;
 
-switch (true) do {
-  case (_objClass isKindOf "ReammoBox_F"): {
+call {
+  if (_objClass isKindOf "ReammoBox_F") exitWith {
     clearMagazineCargoGlobal _obj;
     clearWeaponCargoGlobal _obj;
     clearItemCargoGlobal _obj;
 
     for "_i" from 1 to _contents do {
-      _item = [] call getItem;
-      _itemClass = _item select 0;
-      _itemPool = _item select 1;
+      _itemClass = ["ammo", "weapon", "item"] call BIS_fnc_selectRandom;
 
-      switch _itemPool do {
-        case "ammo": {_obj addMagazineCargoGlobal _item;};
-        case "weapon": {_obj addWeaponCargoGlobal _item;};
-        case "item": {_obj addItemCargoGlobal _item;};
+      call {
+        if (_itemClass == "ammo") exitWith {
+          if (count v_loot_ammo > 0) then {_obj addMagazineCargoGlobal (v_loot_ammo call BIS_fnc_selectRandom);};
+        };
+
+        if (_itemClass == "weapon") exitWith {
+          if (count v_loot_weapons > 0) then {_obj addWeaponCargoGlobal (v_loot_weapons call BIS_fnc_selectRandom);};
+        };
+
+        if (_itemClass == "item") exitWith {
+          if (count v_loot_items > 0) then {_obj addItemCargoGlobal (v_loot_items call BIS_fnc_selectRandom);};
+        };
       };
     };
 
-    _obj allowDamage false;
+  _obj allowDamage false;
   };
-  default {
-    _obj setVariable ["allowDamage", true];
-  };
+
+  // otherwise, default to =>
+_obj setVariable ["allowDamage", true];
 };
 
 /* possibly refactor into construction module, when started

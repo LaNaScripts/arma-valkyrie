@@ -9,9 +9,9 @@
 */
 
 // run init processes
-call preprocessFileLineNumbers "functions\setRoot.sqf"); // setup mission root
-call preprocessFileLineNumbers "compile.sqf"); // compile functions
-call preprocessFileLineNumbers "config.sqf"); // compile configuration values
+[] execVM "server\functions\setRoot.sqf"; // setup mission root
+[] execVM "compile.sqf"; // compile functions
+[] execVM "config.sqf"; // compile configuration values
 
 // run core processes
-[] execVM "server\functions\geZone.sqf"; // generate zone populations
+[] execVM "server\functions\genZone.sqf"; // generate zone populations

@@ -8,6 +8,12 @@
 
 /*
 
+v_zones = [
+  ["rural_1", "rural"],
+  ["city_1", "city"],
+  ["desert_1" "desert"]
+];
+
 v_airport = [];
 v_desert = [];
 v_city = [];

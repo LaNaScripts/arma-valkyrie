@@ -6,15 +6,12 @@
   @returns:
 */
 
-if (!isServer) exitWith {};
-
 private [
   "_marker",
   "_pos",
-  "_vehicleClass",
-  "_vehicleType",
-  "_vehicle",
-  "_hitPoint"
+  "_vehicles",
+  "_type",
+  "_vehicle"
 ];
 
 _marker = [_this, 0, objNull, ""] call BIS_fnc_param; // REQUIRED
@@ -67,5 +64,3 @@ if (_type > 1) then { _vehicle setVehicleAmmo (random 1.0) };
 
 _vehicle setDir (random 360);
 //[_vehicle] call randomWeapons;
-
-*/

@@ -11,28 +11,23 @@
 
 private [
   "_marker",
-  "_pos",
   "_faction",
   "_roles",
-  "_groupRole",
-  "_roleHeadgear", // I believe it's more efficient to obtain the sub-array once
-  "_roleGoggles",  // and then reference it multiple times for each unit
-  "_roleUniforms", // as then you aren't calling the entire array a ton of times
-  "_roleVests",
-  "_roleBackpacks",
-  "_roleWeapons",
-  "_roleBehaviors",
-  "_roleTactics",
-  "_roleSpecials", // special units unique to a role, with a small chance of spawning with the group
-  "_headgear",
-  "_goggles",
-  "_uniform",
-  "_vest",
-  "_backpack",
-  "_weapon",
-  "_behavior",
-  "_tactic",
-  "_special"
+  "_size",
+  "_radius",
+  "_units",
+  "_role",
+  "_gPos",
+  "_unitTypes",
+  "_group",
+  "_uPos",
+  "_unit",
+  "_rWeapons",
+  "_rHeadgear",
+  "_rGoggles",
+  "_rVests",
+  "_rUniforms",
+  "_rBackpacks"
 ];
 
 _marker  = [_this, 0, objNull, ""] call BIS_fnc_param; // REQUIRED
@@ -96,14 +91,14 @@ for "_i" from 0 to _units {
   // _rSpecials   = _role select 12; // specialUnits
 
   // add selected items to unit
-  if (_rWeapons count > 0) then {_unit addWeapon (_rWeapons call BIS_selectRandom);};
-  if (_rHeadgear count > 0) then {_unit addHeadgear (_rHeadgear call BIS_selectRandom);};
-  if (_rGoggles count > 0) then {_unit addGoggles (_rGoggles call BIS_selectRandom);};
-  if (_rVests count > 0) then {_unit addVest (_rVests call BIS_selectRandom);};
-  if (_rUniforms count > 0) then {_unit addUniform (_rUniforms call BIS_selectRandom);};
-  if (_rBackpacks count > 0) then {_unit addBackpack (_rBackpacks call BIS_selectRandom);};
+  if (count _rWeapons > 0) then {_unit addWeapon (_rWeapons call BIS_fnc_selectRandom);};
+  if (count _rHeadgear > 0) then {_unit addHeadgear (_rHeadgear call BIS_fnc_selectRandom);};
+  if (count _rGoggles > 0) then {_unit addGoggles (_rGoggles call BIS_fnc_selectRandom);};
+  if (count _rVests > 0) then {_unit addVest (_rVests call BIS_fnc_selectRandom);};
+  if (count _rUniforms > 0) then {_unit addUniform (_rUniforms call BIS_fnc_selectRandom);};
+  if (count _rBackpacks > 0) then {_unit addBackpack (_rBackpacks call BIS_fnc_selectRandom);};
 
-  _unit spawn refillPrimaryAmmo;
+  _unit spawn resetAmmo;
   //_unit spawn setBehavior;
   //_unit spawn setTactics;
 };
