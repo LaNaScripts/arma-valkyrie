@@ -7,19 +7,20 @@
 */
 
 // compile asset pools
-[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\ammo.sqf");
-[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\container.sqf");
-[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\encounters.sqf");
-[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\items.sqf");
-[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\objectives.sqf");
-[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\objects.sqf");
-[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\roles.sqf");
-[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\uniforms.sqf");
-[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\vehicles.sqf");
-[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\weapons.sqf");
-[] call compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\zones.sqf");
+compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\ammo.sqf");
+compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\container.sqf");
+compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\encounters.sqf");
+compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\items.sqf");
+compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\objectives.sqf");
+compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\objects.sqf");
+compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\roles.sqf");
+compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\uniforms.sqf");
+compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\vehicles.sqf");
+compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\weapons.sqf");
+compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\zones.sqf");
 
 // compile functions
+printDebug       = compile preProcessFileLineNumbers (MISSION_ROOT + "server\functions\printDebug.sqf");
 getContainer     = compile preProcessFileLineNumbers (MISSION_ROOT + "server\functions\getContainer.sqf");
 getContents      = compile preProcessFileLineNumbers (MISSION_ROOT + "server\functions\getContents.sqf");
 getEncounter     = compile preProcessFileLineNumbers (MISSION_ROOT + "server\functions\getEncounter.sqf");

@@ -10,6 +10,7 @@
 
 // run init processes
 [] execVM "server\functions\setRoot.sqf"; // setup mission root
+
 [] execVM "compile.sqf"; // compile functions
 [] execVM "config.sqf"; // compile configuration values
 
