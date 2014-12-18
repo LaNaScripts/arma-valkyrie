@@ -1,1 +1,28 @@
+allowFunctionsLog = 1;
+
 enableDebugConsole = 1;
+
+onLoadIntroTime=false;
+onLoadMissionTime=false;
+disabledAI = 1;
+debriefing = 1;
+showGPS = 1;
+
+respawn = 3;
+respawnDelay = 10;
+respawnVehicleDelay = 60;
+respawnDialog = 0;
+respawnTemplates[] = { "MenuPosition" };
+respawnOnStart = 0;
+aikills = 0;
+
+author = "T-800a"; 
+onLoadName = "T8 Units | Showcase Mission";
+onLoadMission = "Beispielmission zum testen der T8 Units 'Spawnsuit'..."; 
+
+class Header
+{
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 20;
+};

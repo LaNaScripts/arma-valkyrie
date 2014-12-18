@@ -1,0 +1,221 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"a3_characters_f",
+		"aia_takistan_config",
+		"A3_Modules_F_Curator_Curator",
+		"A3_Characters_F_Gamma"
+	};
+	addOnsAuto[]=
+	{
+		"A3_Characters_F_Gamma",
+		"a3_characters_f",
+		"A3_Modules_F_Curator_Curator",
+		"aia_takistan_config"
+	};
+	randomSeed=3374762;
+	class Intel
+	{
+		briefingName="valkyrie";
+		overviewText="Takistan map using valkyrie modules";
+		startWeather=0.29999998;
+		startFog=0.39999998;
+		startWind=0.099999994;
+		forecastFog=0.39999998;
+		forecastWind=0.099999994;
+		forecastWaves=0;
+		forecastLightnings=0.099999994;
+		wavesForced=1;
+		year=2009;
+		day=28;
+		hour=18;
+		minute=15;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=2;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7698.9839,295.92294,1582.8381};
+					azimut=28.094965;
+					id=0;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					text="s1";
+				};
+			};
+		};
+		class Item1
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={7733.272,296.04001,1605.1964};
+					class args
+					{
+						items=4;
+						class Item0
+						{
+							value="s1";
+							parentCls="ModuleCurator_F";
+							typeName="Owner";
+						};
+						class Item1
+						{
+							value="";
+							parentCls="ModuleCurator_F";
+							typeName="Name";
+						};
+						class Item2
+						{
+							value="2";
+							parentCls="ModuleCurator_F";
+							typeName="Addons";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleCurator_F";
+							typeName="Forced";
+						};
+					};
+					id=1;
+					side="LOGIC";
+					vehicle="ModuleCurator_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+					text="zeus";
+				};
+			};
+		};
+	};
+	class Markers
+	{
+		items=2;
+		class Item0
+		{
+			position[]={7967.4839,296.04001,1813.2634};
+			name="rural_1";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorEAST";
+			a=50;
+			b=100;
+			angle=63.388866;
+		};
+		class Item1
+		{
+			position[]={9424.8926,332.43948,2441.0391};
+			name="mkr_4_2";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorEAST";
+			a=100;
+			b=100;
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"aia_takistan_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_takistan_config"
+	};
+	randomSeed=1591776;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.40000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.40000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"aia_takistan_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_takistan_config"
+	};
+	randomSeed=4406495;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.40000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.40000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"aia_takistan_config"
+	};
+	addOnsAuto[]=
+	{
+		"aia_takistan_config"
+	};
+	randomSeed=6402208;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.40000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.40000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2009;
+		day=28;
+		hour=16;
+		minute=20;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};

@@ -1,18 +1,19 @@
-/*
+// =======================================================================================================
+//
+//		init.sqf
+//
+// =======================================================================================================
 
-  file: 'init.sqf'
-  author: devyn spencer (http://github.com/devynspencer)
-  description:
-    - initializes core processes and functions
-    - initializes modules included in 'server\config.sqf'
+enableSaving [ false, false ];
 
-*/
+// T8_UnitINIT -> Load the functions
+[] execVM "T8_UnitsINIT.sqf";
 
-// run init processes
-[] execVM "server\functions\setRoot.sqf"; // setup mission root
+// missionEXEC -> Load the unit setup & more
+[] execVM "T8_missionEXEC.sqf";
 
-[] execVM "compile.sqf"; // compile functions
-[] execVM "config.sqf"; // compile configuration values
+// set skill for editor placed units, see selected side in file
+// [] execVM "skillEXEC.sqf";
 
-// run core processes
-[] execVM "server\functions\genZone.sqf"; // generate zone populations
+// delete dead bodies, and weapon holders on the ground
+[] execVM "garbageCollector.sqf";
