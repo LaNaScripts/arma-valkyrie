@@ -3,16 +3,17 @@ class Mission
 {
 	addOns[]=
 	{
-		"a3_characters_f",
 		"aia_takistan_config",
 		"A3_Modules_F_Curator_Curator",
-		"A3_Characters_F_Gamma"
+		"A3_Characters_F_Gamma",
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f"
 	};
 	addOnsAuto[]=
 	{
-		"A3_Characters_F_Gamma",
-		"a3_characters_f",
 		"A3_Modules_F_Curator_Curator",
+		"A3_Characters_F_BLUFOR",
+		"a3_characters_f",
 		"aia_takistan_config"
 	};
 	randomSeed=3374762;
@@ -39,26 +40,6 @@ class Mission
 	{
 		items=2;
 		class Item0
-		{
-			side="WEST";
-			class Vehicles
-			{
-				items=1;
-				class Item0
-				{
-					position[]={7698.9839,295.92294,1582.8381};
-					azimut=28.094965;
-					id=0;
-					side="WEST";
-					vehicle="B_G_Soldier_F";
-					player="PLAYER COMMANDER";
-					leader=1;
-					skill=0.60000002;
-					text="s1";
-				};
-			};
-		};
-		class Item1
 		{
 			side="LOGIC";
 			class Vehicles
@@ -95,7 +76,7 @@ class Mission
 							typeName="Forced";
 						};
 					};
-					id=1;
+					id=0;
 					side="LOGIC";
 					vehicle="ModuleCurator_F";
 					leader=1;
@@ -105,20 +86,39 @@ class Mission
 				};
 			};
 		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8336.7295,296.04001,1921.807};
+					azimut=-428.35599;
+					id=1;
+					side="WEST";
+					vehicle="B_soldier_M_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+				};
+			};
+		};
 	};
 	class Markers
 	{
 		items=2;
 		class Item0
 		{
-			position[]={7967.4839,296.04001,1813.2634};
+			position[]={8289.04,296.04001,1941.6554};
 			name="rural_1";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorEAST";
 			a=50;
-			b=100;
-			angle=63.388866;
+			b=50;
+			angle=63.388901;
 		};
 		class Item1
 		{

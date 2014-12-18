@@ -16,9 +16,9 @@ respawnTemplates[] = { "MenuPosition" };
 respawnOnStart = 0;
 aikills = 0;
 
-author = "T-800a"; 
-onLoadName = "T8 Units | Showcase Mission";
-onLoadMission = "Beispielmission zum testen der T8 Units 'Spawnsuit'..."; 
+author = "";
+onLoadName = "valkyrie | dynamically generated destruction";
+onLoadMission = ""; 
 
 class Header
 {

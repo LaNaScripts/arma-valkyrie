@@ -3,6 +3,7 @@
 //		init.sqf
 //
 // =======================================================================================================
+//v_grpEA_Basic = call compile preprocessFileLineNumbers "functions\v_grpEA_Basic.sqf";
 
 enableSaving [ false, false ];
 
