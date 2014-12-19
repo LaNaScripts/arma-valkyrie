@@ -1,11 +1,17 @@
-// =======================================================================================================
-//
-//		init.sqf
-//
-// =======================================================================================================
-//v_grpEA_Basic = call compile preprocessFileLineNumbers "functions\v_grpEA_Basic.sqf";
+/*
 
-enableSaving [ false, false ];
+  name: init.sqf
+  author:
+  about: initializes game processes
+
+*/
+call compile preprocessFileLineNumbers "config.sqf";
+
+v_refillPrimaryAmmo = compile preprocessFileLineNumbers "functions\v_refillPrimaryAmmo.sqf";
+v_grpEA_basic       = compile preprocessFileLineNumbers "functions\spawn\v_grpEA_basic.sqf";
+v_grpEA_vassals     = compile preprocessFileLineNumbers "functions\spawn\v_grpEA_vassals.sqf";
+
+enableSaving [false, false];
 
 // T8_UnitINIT -> Load the functions
 [] execVM "T8_UnitsINIT.sqf";

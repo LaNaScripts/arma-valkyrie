@@ -7,13 +7,21 @@ class Mission
 		"A3_Modules_F_Curator_Curator",
 		"A3_Characters_F_Gamma",
 		"A3_Characters_F_BLUFOR",
-		"a3_characters_f"
+		"a3_characters_f",
+		"A3_Air_F_Heli_Light_01",
+		"RH_PDW",
+		"RH_m4_cfg",
+		"RH_de_cfg"
 	};
 	addOnsAuto[]=
 	{
 		"A3_Modules_F_Curator_Curator",
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
+		"A3_Air_F_Heli_Light_01",
+		"RH_PDW",
+		"RH_m4_cfg",
+		"RH_de_cfg",
 		"aia_takistan_config"
 	};
 	randomSeed=3374762;
@@ -94,41 +102,96 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8336.7295,296.04001,1921.807};
-					azimut=-428.35599;
+					position[]={8296.7383,296.04001,1834.2803};
+					azimut=-792.17767;
 					id=1;
 					side="WEST";
-					vehicle="B_soldier_M_F";
+					vehicle="B_Soldier_F";
 					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
+					text="s1";
 				};
 			};
 		};
 	};
-	class Markers
+	class Vehicles
 	{
-		items=2;
+		items=4;
 		class Item0
 		{
-			position[]={8289.04,296.04001,1941.6554};
+			position[]={8163.7207,296.04001,1855.6107};
+			azimut=-367.41599;
+			id=2;
+			side="EMPTY";
+			vehicle="B_Heli_Light_01_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item1
+		{
+			position[]={8167.3174,296.04001,1858.5151};
+			azimut=-367.41599;
+			id=3;
+			side="EMPTY";
+			vehicle="RH_PDWbox";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item2
+		{
+			position[]={8167.6738,296.04001,1856.6735};
+			azimut=-315.3566;
+			id=4;
+			side="EMPTY";
+			vehicle="RH_m4m16ammobox";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item3
+		{
+			position[]={8169.2236,296.04001,1857.6012};
+			azimut=-367.41599;
+			id=5;
+			side="EMPTY";
+			vehicle="RHpistammobox";
+			leader=1;
+			skill=0.60000002;
+		};
+	};
+	class Markers
+	{
+		items=3;
+		class Item0
+		{
+			position[]={8000.5479,294.66898,2161.7935};
 			name="rural_1";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorEAST";
-			a=50;
-			b=50;
-			angle=63.388901;
+			a=800;
+			b=200;
+			angle=146.55099;
 		};
 		class Item1
 		{
-			position[]={9424.8926,332.43948,2441.0391};
-			name="mkr_4_2";
+			position[]={9488.7012,333.02023,2137.6216};
+			name="rural_2";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorEAST";
-			a=100;
-			b=100;
+			a=900;
+			b=300;
+			angle=338.83401;
+		};
+		class Item2
+		{
+			position[]={8474.6299,305.72128,2437.896};
+			name="urban_1";
+			markerType="ELLIPSE";
+			type="Empty";
+			a=300;
+			b=300;
 		};
 	};
 };
