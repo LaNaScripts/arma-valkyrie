@@ -22,21 +22,29 @@ if (_exit) exitWith {};
 waitUntil {!isNil "T8U_var_InitDONE"};
 sleep 5;
 
+/*
+
 // encounters
-_encountersRural = [
-	"v_grpEA_basic",
-	"v_grpEA_vassals"
+_AAF_encountersRural = [
+	"v_grpAAF_basic"
 ];
 
-_encountersUrban = [
-	"v_grpEA_basic",
-	"v_grpEA_vassals"
+_AAF_encountersUrban = [
+	"v_grpAAF_basic"
+];
+
+*/
+
+_AAF_encountersVR = [
+"v_grpAAF_basic"
 ];
 
 // behaviors
 // eventually behaviors should be attached to specific unit roles
 // based on current zone i.e. technical patrols will "patrol urban"
 // near cities or "patrol around" a rural area but will never "defend"
+
+/*
 
 _behaviorsRural = [
 	"PATROL",
@@ -53,25 +61,34 @@ _behaviorsUrban = [
 	"PATROL_AROUND"
 ];
 
-rural_1 = [
-	[[v_groupFireTeam, "rural_1", (_encountersRural call BIS_fnc_selectRandom)], [(_behaviorsRural call BIS_fnc_selectRandom)]],
-	[[v_groupFireTeam, "rural_1", (_encountersRural call BIS_fnc_selectRandom)], [(_behaviorsRural call BIS_fnc_selectRandom)]],
-	[[v_groupTechnicalPat, "rural_1", false], ["PATROL_AROUND"]]
+*/
+
+vr_1 = [
+	[[v_AAF_VR_entities, "vr_1", "v_grpAAF_basic"], ["LOITER"]],
+	[[v_AAF_VR_entities, "vr_1", "v_grpAAF_basic"], ["LOITER"]],
+	[[v_AAF_VR_entities, "vr_1", "v_grpAAF_basic"], ["LOITER"]],
+	[[v_AAF_VR_entities, "vr_1", "v_grpAAF_basic"], ["LOITER"]]
 ];
 
-[ "rural_1", "rural_1", "EAST", "WEST"] spawn T8U_fnc_Zone;
+[ "vr_1", "vr_1", "GUER", "WEST"] spawn T8U_fnc_Zone;
 
-rural_2 = [
-	[[v_groupFireTeam, "rural_2", (_encountersRural call BIS_fnc_selectRandom)], [(_behaviorsRural call BIS_fnc_selectRandom)]],
-	[[v_groupMarksmen, "rural_2", ""], ["OVERWATCH"]]
+vr_2 = [
+	[[v_AAF_VR_soldiers, "vr_2", "v_grpAAF_basic"], ["LOITER"]],
+	[[v_AAF_VR_soldiers, "vr_2", "v_grpAAF_basic"], ["LOITER"]],
+	[[v_AAF_VR_soldiers, "vr_2", "v_grpAAF_basic"], ["LOITER"]],
+	[[v_AAF_VR_soldiers, "vr_2", "v_grpAAF_basic"], ["LOITER"]]
 ];
 
-[ "rural_2", "rural_2", "EAST", "WEST"] spawn T8U_fnc_Zone;
+[ "vr_2", "vr_2", "GUER", "WEST"] spawn T8U_fnc_Zone;
 
-urban_1 = [
-	[[v_groupFireTeam, "urban_1", (_encountersUrban call BIS_fnc_selectRandom)], [(_behaviorsUrban call BIS_fnc_selectRandom)]],
-	[[v_groupFireTeam, "urban_1", (_encountersUrban call BIS_fnc_selectRandom)], [(_behaviorsUrban call BIS_fnc_selectRandom)]],
-	[[v_groupTechnicalPat, "urban_1", false ], ["PATROL_URBAN"]]
+/*
+
+vr_1 = [
+	[[v_AAF_VR_entities, "vr_1", (_AAF_encountersVR call BIS_fnc_selectRandom)], [(_behaviorsRural call BIS_fnc_selectRandom)]],
+	[[v_AAF_VR_entities, "vr_1", (_AAF_encountersVR call BIS_fnc_selectRandom)], [(_behaviorsRural call BIS_fnc_selectRandom)]],
+	[[v_AAF_sm_vehicle, "vr_1", false], ["PATROL_AROUND"]]
 ];
 
-[ "urban_1", "urban_1", "EAST", "WEST"] spawn T8U_fnc_Zone;
+[ "vr_1", "vr_1", "EAST", "WEST"] spawn T8U_fnc_Zone;
+
+*/

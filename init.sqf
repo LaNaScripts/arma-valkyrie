@@ -7,9 +7,9 @@
 */
 call compile preprocessFileLineNumbers "config.sqf";
 
-v_refillPrimaryAmmo = compile preprocessFileLineNumbers "functions\v_refillPrimaryAmmo.sqf";
-v_grpEA_basic       = compile preprocessFileLineNumbers "functions\spawn\v_grpEA_basic.sqf";
-v_grpEA_vassals     = compile preprocessFileLineNumbers "functions\spawn\v_grpEA_vassals.sqf";
+v_removeGear        = compile preprocessFileLineNumbers "functions\spawn\v_removeGear.sqf";
+v_grpAAF_basic      = compile preprocessFileLineNumbers "functions\spawn\v_grpAAF_basic.sqf";
+v_setupPlayer       = compile preprocessFileLineNumbers "functions\spawn\v_setupPlayer.sqf";
 
 enableSaving [false, false];
 

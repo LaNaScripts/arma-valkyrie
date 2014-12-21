@@ -1,3 +1,40 @@
+v_markers = [
+  "rural_1",
+  "rural_2",
+  "rural_3",
+  "rural_4",
+  "rural_5",
+  "city_1",
+  "city_2",
+  "city_3",
+  "city_4",
+  "city_5"
+];
+
+v_AAF_VR_entities = [
+  "I_Soldier_VR_F",
+  "I_Soldier_VR_F",
+  "I_Soldier_VR_F"
+];
+
+v_AAF_VR_soldiers = [
+  "I_Protagonist_VR_F",
+  "I_Protagonist_VR_F",
+  "I_Protagonist_VR_F"
+];
+
+v_AAF_sm_patrol = [
+  "I_G_Soldier_F",
+  "I_G_Soldier_F",
+  "I_G_Soldier_F",
+  "I_G_Soldier_F"
+];
+
+v_AAF_sm_vehicle = [
+  "I_G_Offroad_01_armed_F",
+  "I_G_Offroad_01_F"
+];
+
 v_groupFireTeam = [
   "O_soldier_TL_F",
   "O_medic_F",

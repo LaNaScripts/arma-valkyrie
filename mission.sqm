@@ -3,51 +3,65 @@ class Mission
 {
 	addOns[]=
 	{
-		"aia_takistan_config",
-		"A3_Modules_F_Curator_Curator",
-		"A3_Characters_F_Gamma",
-		"A3_Characters_F_BLUFOR",
+		"A3_Characters_F_Bootcamp",
 		"a3_characters_f",
-		"A3_Air_F_Heli_Light_01",
-		"RH_PDW",
-		"RH_m4_cfg",
-		"RH_de_cfg"
+		"map_vr",
+		"A3_Modules_F_Curator_Curator",
+		"A3_Structures_F_Bootcamp_VR_CoverObjects",
+		"A3_Structures_F_Bootcamp_VR_Blocks",
+		"A3_Misc_F_Helpers"
 	};
 	addOnsAuto[]=
 	{
-		"A3_Modules_F_Curator_Curator",
-		"A3_Characters_F_BLUFOR",
+		"A3_Characters_F_Bootcamp",
 		"a3_characters_f",
-		"A3_Air_F_Heli_Light_01",
-		"RH_PDW",
-		"RH_m4_cfg",
-		"RH_de_cfg",
-		"aia_takistan_config"
+		"A3_Modules_F_Curator_Curator",
+		"A3_Structures_F_Bootcamp_VR_CoverObjects",
+		"A3_Structures_F_Bootcamp_VR_Blocks",
+		"A3_Misc_F_Helpers",
+		"map_vr"
 	};
-	randomSeed=3374762;
+	randomSeed=11380245;
 	class Intel
 	{
-		briefingName="valkyrie";
-		overviewText="Takistan map using valkyrie modules";
-		startWeather=0.29999998;
-		startFog=0.39999998;
-		startWind=0.099999994;
-		forecastFog=0.39999998;
-		forecastWind=0.099999994;
-		forecastWaves=0;
-		forecastLightnings=0.099999994;
-		wavesForced=1;
-		year=2009;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
 		day=28;
-		hour=18;
-		minute=15;
+		hour=13;
+		minute=25;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
 	class Groups
 	{
-		items=2;
+		items=3;
 		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4408.0308,5,2601.0601};
+					azimut=360.42758;
+					id=0;
+					side="WEST";
+					vehicle="B_Protagonist_VR_F";
+					player="PLAYER COMMANDER";
+					leader=1;
+					skill=0.60000002;
+					text="player_1";
+				};
+			};
+		};
+		class Item1
 		{
 			side="LOGIC";
 			class Vehicles
@@ -55,13 +69,13 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={7733.272,296.04001,1605.1964};
+					position[]={4345.6851,5,617.47217};
 					class args
 					{
 						items=4;
 						class Item0
 						{
-							value="s1";
+							value="player_1";
 							parentCls="ModuleCurator_F";
 							typeName="Owner";
 						};
@@ -84,7 +98,7 @@ class Mission
 							typeName="Forced";
 						};
 					};
-					id=0;
+					id=1;
 					side="LOGIC";
 					vehicle="ModuleCurator_F";
 					leader=1;
@@ -94,104 +108,316 @@ class Mission
 				};
 			};
 		};
-		class Item1
+		class Item2
 		{
-			side="WEST";
+			side="GUER";
 			class Vehicles
 			{
 				items=1;
 				class Item0
 				{
-					position[]={8296.7383,296.04001,1834.2803};
-					azimut=-792.17767;
-					id=1;
-					side="WEST";
-					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
+					position[]={4407.7227,5,2606.5708};
+					azimut=181.1161;
+					id=2;
+					side="GUER";
+					vehicle="I_Protagonist_VR_F";
 					leader=1;
 					skill=0.60000002;
-					text="s1";
+					text="GUER_infantry";
 				};
 			};
 		};
 	};
 	class Vehicles
 	{
-		items=4;
+		items=27;
 		class Item0
 		{
-			position[]={8163.7207,296.04001,1855.6107};
-			azimut=-367.41599;
-			id=2;
+			position[]={4419.6069,5,2721.6226};
+			id=3;
 			side="EMPTY";
-			vehicle="B_Heli_Light_01_F";
+			vehicle="Land_VR_CoverObject_01_kneelHigh_F";
 			leader=1;
 			skill=0.60000002;
 		};
 		class Item1
 		{
-			position[]={8167.3174,296.04001,1858.5151};
-			azimut=-367.41599;
-			id=3;
+			position[]={4116.876,5,2960.1714};
+			id=4;
 			side="EMPTY";
-			vehicle="RH_PDWbox";
+			vehicle="Land_VR_CoverObject_01_kneelLow_F";
 			leader=1;
 			skill=0.60000002;
 		};
 		class Item2
 		{
-			position[]={8167.6738,296.04001,1856.6735};
-			azimut=-315.3566;
-			id=4;
+			position[]={4430.2397,5,2626.5801};
+			id=5;
 			side="EMPTY";
-			vehicle="RH_m4m16ammobox";
+			vehicle="Land_VR_CoverObject_01_stand_F";
 			leader=1;
 			skill=0.60000002;
 		};
 		class Item3
 		{
-			position[]={8169.2236,296.04001,1857.6012};
-			azimut=-367.41599;
-			id=5;
+			position[]={4417.7827,5,2635.7661};
+			azimut=-269.00061;
+			id=6;
 			side="EMPTY";
-			vehicle="RHpistammobox";
+			vehicle="Land_VR_Block_05_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item4
+		{
+			position[]={4379.6099,5,2696.4102};
+			id=7;
+			side="EMPTY";
+			vehicle="Land_VR_Block_02_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item5
+		{
+			position[]={4413.5962,5,2581.7764};
+			azimut=-270.125;
+			id=8;
+			side="EMPTY";
+			vehicle="Land_VR_Block_01_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item6
+		{
+			position[]={4442.0571,5,2680.7153};
+			azimut=89.612785;
+			id=9;
+			side="EMPTY";
+			vehicle="Land_VR_CoverObject_01_kneel_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item7
+		{
+			position[]={4463.9487,5,2576.3118};
+			azimut=1.124204;
+			id=10;
+			side="EMPTY";
+			vehicle="Land_VR_Block_01_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item8
+		{
+			position[]={4404.9165,5,2673.7122};
+			azimut=0.080673203;
+			id=11;
+			side="EMPTY";
+			vehicle="Land_VR_CoverObject_01_kneelHigh_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item9
+		{
+			position[]={4443.085,5,2625.3655};
+			azimut=0.080673203;
+			id=12;
+			side="EMPTY";
+			vehicle="Land_VR_CoverObject_01_kneel_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item10
+		{
+			position[]={4495.9131,5,2664.498};
+			azimut=-89.582314;
+			id=13;
+			side="EMPTY";
+			vehicle="Land_VR_CoverObject_01_kneelLow_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item11
+		{
+			position[]={4456.2251,5,2562.3416};
+			azimut=0.080673203;
+			id=14;
+			side="EMPTY";
+			vehicle="Land_VR_CoverObject_01_stand_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item12
+		{
+			position[]={4425.2705,5,2620.2375};
+			azimut=21.622704;
+			id=15;
+			side="EMPTY";
+			vehicle="Land_VR_Block_05_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item13
+		{
+			position[]={4427.3076,5,2587.8342};
+			azimut=0.080673203;
+			id=16;
+			side="EMPTY";
+			vehicle="Land_VR_Block_03_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item14
+		{
+			position[]={4427.085,5,2650.8726};
+			azimut=-88.965652;
+			id=17;
+			side="EMPTY";
+			vehicle="Land_VR_Block_01_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item15
+		{
+			position[]={4402.4902,5,2612.6787};
+			id=18;
+			side="EMPTY";
+			vehicle="Sign_Arrow_Large_Green_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item16
+		{
+			position[]={4386.2485,5,2619.5671};
+			azimut=-359.21417;
+			id=19;
+			side="EMPTY";
+			vehicle="Land_VR_Block_01_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item17
+		{
+			position[]={4375.4063,5,2625.5356};
+			azimut=-89.008522;
+			id=20;
+			side="EMPTY";
+			vehicle="Land_VR_Block_03_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item18
+		{
+			position[]={4374.6484,5,2639.3491};
+			azimut=-178.96057;
+			id=21;
+			side="EMPTY";
+			vehicle="Land_VR_Block_01_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item19
+		{
+			position[]={4385.4619,5,2633.3345};
+			azimut=91.245094;
+			id=22;
+			side="EMPTY";
+			vehicle="Land_VR_Block_03_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item20
+		{
+			position[]={4397.4121,5,2649.2837};
+			azimut=-268.86395;
+			id=23;
+			side="EMPTY";
+			vehicle="Land_VR_Block_01_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item21
+		{
+			position[]={4403.4482,5,2660.082};
+			azimut=1.3417395;
+			id=24;
+			side="EMPTY";
+			vehicle="Land_VR_Block_03_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item22
+		{
+			position[]={4412.2446,5,2648.0193};
+			azimut=-178.92236;
+			id=25;
+			side="EMPTY";
+			vehicle="Land_VR_Block_01_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item23
+		{
+			position[]={4423.0547,5,2641.9985};
+			azimut=91.283211;
+			id=26;
+			side="EMPTY";
+			vehicle="Land_VR_Block_03_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item24
+		{
+			position[]={4458.8169,5,2626.1633};
+			azimut=1.101674;
+			id=27;
+			side="EMPTY";
+			vehicle="Land_VR_Block_01_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item25
+		{
+			position[]={4448.021,5,2632.186};
+			azimut=271.30728;
+			id=28;
+			side="EMPTY";
+			vehicle="Land_VR_Block_03_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item26
+		{
+			position[]={4412.1626,5,2612.3677};
+			id=29;
+			side="EMPTY";
+			vehicle="Sign_Arrow_Large_Green_F";
 			leader=1;
 			skill=0.60000002;
 		};
 	};
 	class Markers
 	{
-		items=3;
+		items=2;
 		class Item0
 		{
-			position[]={8000.5479,294.66898,2161.7935};
-			name="rural_1";
+			position[]={4402.4834,5,2612.5361};
+			name="vr_1";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorEAST";
-			a=800;
-			b=200;
-			angle=146.55099;
+			a=2;
+			b=2;
 		};
 		class Item1
 		{
-			position[]={9488.7012,333.02023,2137.6216};
-			name="rural_2";
+			position[]={4412.1865,5,2612.2568};
+			name="vr_2";
 			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorEAST";
-			a=900;
-			b=300;
-			angle=338.83401;
-		};
-		class Item2
-		{
-			position[]={8474.6299,305.72128,2437.896};
-			name="urban_1";
-			markerType="ELLIPSE";
-			type="Empty";
-			a=300;
-			b=300;
+			a=2;
+			b=2;
 		};
 	};
 };
@@ -199,27 +425,27 @@ class Intro
 {
 	addOns[]=
 	{
-		"aia_takistan_config"
+		"map_vr"
 	};
 	addOnsAuto[]=
 	{
-		"aia_takistan_config"
+		"map_vr"
 	};
-	randomSeed=1591776;
+	randomSeed=6502668;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
-		startWeather=0.40000001;
+		startWeather=0;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.40000001;
+		forecastWeather=0;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=2009;
+		year=2035;
 		day=28;
-		hour=16;
-		minute=20;
+		hour=13;
+		minute=37;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
@@ -228,27 +454,27 @@ class OutroWin
 {
 	addOns[]=
 	{
-		"aia_takistan_config"
+		"map_vr"
 	};
 	addOnsAuto[]=
 	{
-		"aia_takistan_config"
+		"map_vr"
 	};
-	randomSeed=4406495;
+	randomSeed=5180151;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
-		startWeather=0.40000001;
+		startWeather=0;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.40000001;
+		forecastWeather=0;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=2009;
+		year=2035;
 		day=28;
-		hour=16;
-		minute=20;
+		hour=13;
+		minute=37;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
@@ -257,27 +483,27 @@ class OutroLoose
 {
 	addOns[]=
 	{
-		"aia_takistan_config"
+		"map_vr"
 	};
 	addOnsAuto[]=
 	{
-		"aia_takistan_config"
+		"map_vr"
 	};
-	randomSeed=6402208;
+	randomSeed=15867585;
 	class Intel
 	{
 		timeOfChanges=1800.0002;
-		startWeather=0.40000001;
+		startWeather=0;
 		startWind=0.1;
 		startWaves=0.1;
-		forecastWeather=0.40000001;
+		forecastWeather=0;
 		forecastWind=0.1;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
-		year=2009;
+		year=2035;
 		day=28;
-		hour=16;
-		minute=20;
+		hour=13;
+		minute=37;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
