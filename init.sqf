@@ -7,9 +7,10 @@
 */
 call compile preprocessFileLineNumbers "config.sqf";
 
-v_removeGear        = compile preprocessFileLineNumbers "functions\spawn\v_removeGear.sqf";
-v_grpAAF_basic      = compile preprocessFileLineNumbers "functions\spawn\v_grpAAF_basic.sqf";
-v_setupPlayer       = compile preprocessFileLineNumbers "functions\spawn\v_setupPlayer.sqf";
+v_removeGear       = compile preprocessFileLineNumbers "functions\spawn\v_removeGear.sqf";
+v_grpAAF_basic     = compile preprocessFileLineNumbers "functions\spawn\v_grpAAF_basic.sqf";
+v_grpAAF_technical = compile preprocessFileLineNumbers "functions\spawn\v_grpAAF_technical.sqf";
+v_setupPlayer      = compile preprocessFileLineNumbers "functions\spawn\v_setupPlayer.sqf";
 
 enableSaving [false, false];
 

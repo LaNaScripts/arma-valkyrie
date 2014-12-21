@@ -30,9 +30,13 @@ v_AAF_sm_patrol = [
   "I_G_Soldier_F"
 ];
 
-v_AAF_sm_vehicle = [
-  "I_G_Offroad_01_armed_F",
-  "I_G_Offroad_01_F"
+v_AAF_VR_technical = [
+  "c_offroad_01_armed",
+  "B_MRAP_01_F",
+  "I_G_Soldier_F",
+  "I_G_Soldier_F",
+  "I_G_Soldier_F",
+  "I_G_Soldier_F"
 ];
 
 v_groupFireTeam = [
