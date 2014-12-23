@@ -18,7 +18,7 @@ aikills = 0;
 
 author = "";
 onLoadName = "valkyrie | dynamically generated destruction";
-onLoadMission = ""; 
+onLoadMission = "";
 
 class Header
 {

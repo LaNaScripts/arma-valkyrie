@@ -30,13 +30,32 @@ v_AAF_sm_patrol = [
   "I_G_Soldier_F"
 ];
 
-v_AAF_VR_technical = [
-  "c_offroad_01_armed",
-  "B_MRAP_01_F",
+v_CIV_traffic = [
+  "C_Offroad_01_F",
+  "C_Offroad_01_repair_F",
+  "C_Hatchback_01_F",
+  "C_Hatchback_01_sport_F",
+  "C_SUV_01_F",
+  "C_Van_01_transport_F",
+  "C_Van_01_box_F",
+  "C_Van_01_fuel_F",
+  "C_Heli_Light_01_civil_F"
+];
+
+/*
+v_AAF_VR_mobileInfantry = [
+  "O_G_Offroad_01_F",
   "I_G_Soldier_F",
   "I_G_Soldier_F",
   "I_G_Soldier_F",
   "I_G_Soldier_F"
+];
+
+*/
+
+v_AAF_VR_technical = [
+  "O_G_Offroad_01_armed_F",
+  "O_G_Offroad_01_armed_F"
 ];
 
 v_groupFireTeam = [

@@ -22,7 +22,7 @@ T8U_var_EnemySide 				= EAST;
 
 // Independent Diplomacy 'switch' -> 0: GUR neutral; 1: GUR friendly to BLUE; 2: GUR friendly to RED; 3: GUR enemy of both;
 // ( for finding enemy when calling for help when under attackt - check your mission settings )
-T8U_var_GuerDiplo 				= 1;
+T8U_var_GuerDiplo 				= 0;
 
 T8U_var_TaskReturnTime			= 30;			// when SAD WP is finished group will redo origin task after x sec
 T8U_var_CacheTime				= 90;			// units in Zones are cached after X seconds when zone is left

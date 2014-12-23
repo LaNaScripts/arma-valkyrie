@@ -1,28 +1,50 @@
-if (_this isKindOf "Man") then {
-  _this call v_grpAAF_basic;
-  //{deleteVehicle _x} forEach (crew _this);
-};
+/*
+
+  file: v_grp_AAF_technical
+  author: http://github.com/devynspencer
+  about: creates a technical patrol
+
+*/
+
+{
+  _x setVariable ["BIS_enableRandomization", false];
+  _x spawn v_grpAAF_basic;
+} forEach (crew vehicle _this);
+
+/*
+private [
+"_vehicle",
+"_missingCargo",
+"_cargoCount",
+"_driverCount",
+"_gunnerCount",
+"_commanderCount",
+"_capacity",
+"_unit"
+];
+
+//_vehicle = createVehicle ["O_G_Offroad_01_F", (position _this), [], 0, "NONE"];
+//_this assignAsCargo vehicle _this;
+//_this moveInAny _vehicle;
 
 /*
 
-TODO: check what the default spawn radius is for t8 units
-TODO: see how small we can get the nearEntities radius
-TODO: abstract this into a single function for initializing any civilian or military crew
-TODO: add support for multiple vehicles per group; split units as evenly as possible into number of groups equal to number of vehicles
+_missingCargo = floor random 4;
+_cargoCount = vehicle _this emptyPositions "cargo";
+_driverCount = vehicle _this emptyPositions "driver";
+_gunnerCount = vehicle _this emptyPositions "gunner";
+_commanderCount = vehicle _this emptyPositions "commander";
+_capacity = (_cargoCount - _missingCargo) + _driverCount + _gunnerCount + _commanderCount;
 
+sleep 1;
 
-
-
-//_this setVariable ["BIS_enableRandomization", false];
-
-_vehicle = ((position _this) nearEntities [["Car"], 60]) select 0;
-
-if (_this isKindOf "Man") then {
-//sleep 30;
-_this call v_grpAAF_basic;
-_this moveInAny _vehicle;
-} else {
-{deleteVehicle _x} forEach (crew vehicle _this);
+for "_i" from 1 to _capacity do {
+  _unit = (group _this) createUnit ["O_G_Soldier_F", (position _this), [], 0, "NONE"];
+  _unit assignAsCargo _this;
+  _unit moveInAny _this;
 };
 
-*/
+{
+  _x setVariable ["BIS_enableRandomization", false];
+  _x spawn v_grpAAF_basic;
+} forEach (crew vehicle _this);

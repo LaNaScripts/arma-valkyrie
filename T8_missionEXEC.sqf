@@ -67,56 +67,19 @@ _behaviorsUrban = [
 	"LOITER"
 ];
 
-/*
-
-// vr spawns
-VR_1 = [
-	[[v_AAF_VR_entities, "VR_1", true, "GUER", (_AAF_encountersVR call BIS_fnc_selectRandom)], [(_behaviorsAll call BIS_fnc_selectRandom)]]
-];
-["VR_1", "VR_1", "GUER", "WEST"] spawn T8U_fnc_Zone;
-
-// rural spawns
-RURAL_1 = [
-	[[v_AAF_VR_entities, "RURAL_1", true, "GUER", (_AAF_encountersRural call BIS_fnc_selectRandom)], [(_behaviorsAll call BIS_fnc_selectRandom)]]
-];
-["RURAL_1", "RURAL_1", "GUER", "WEST"] spawn T8U_fnc_Zone;
-
-// urban spawns
-URBAN_1 = [
-	[[v_AAF_VR_soldiers, "URBAN_1", true, "GUER", (_AAF_encountersUrban call BIS_fnc_selectRandom)], [(_behaviorsAll call BIS_fnc_selectRandom)]]
-];
-["URBAN_1", "URBAN_1", "GUER", "WEST"] spawn T8U_fnc_Zone;
-
-*/
-
 // technical patrol test
 
 RURAL_1 = [
-	[[v_AAF_VR_technical, "RURAL_1", false, "GUER", "v_grpAAF_technical"], ["PATROL_AROUND"]],
 	[[v_AAF_VR_technical, "RURAL_1", false, "GUER", "v_grpAAF_technical"], ["PATROL_AROUND"]]
 ];
 ["RURAL_1", "RURAL_1", "GUER", "WEST"] spawn T8U_fnc_Zone;
 
 RURAL_2 = [
-	[[v_AAF_VR_technical, "RURAL_2", false, "GUER", "v_grpAAF_technical"], ["PATROL_AROUND"]],
 	[[v_AAF_VR_technical, "RURAL_2", false, "GUER", "v_grpAAF_technical"], ["PATROL_AROUND"]]
 ];
 ["RURAL_2", "RURAL_2", "GUER", "WEST"] spawn T8U_fnc_Zone;
 
-RURAL_3 = [
-	[[v_AAF_VR_technical, "RURAL_3", false, "GUER", "v_grpAAF_technical"], ["PATROL_AROUND"]],
-	[[v_AAF_VR_technical, "RURAL_3", false, "GUER", "v_grpAAF_technical"], ["PATROL_AROUND"]]
+VR_1 = [
+	[[v_AAF_VR_entities, "vr_1", (_AAF_encountersVR call BIS_fnc_selectRandom)], [(_behaviorsRural call BIS_fnc_selectRandom)]]
 ];
-["RURAL_3", "RURAL_3", "GUER", "WEST"] spawn T8U_fnc_Zone;
-
-/*
-
-vr_1 = [
-	[[v_AAF_VR_entities, "vr_1", (_AAF_encountersVR call BIS_fnc_selectRandom)], [(_behaviorsRural call BIS_fnc_selectRandom)]],
-	[[v_AAF_VR_entities, "vr_1", (_AAF_encountersVR call BIS_fnc_selectRandom)], [(_behaviorsRural call BIS_fnc_selectRandom)]],
-	[[v_AAF_sm_vehicle, "vr_1", false], ["PATROL_AROUND"]]
-];
-
-[ "vr_1", "vr_1", "EAST", "WEST"] spawn T8U_fnc_Zone;
-
-*/
+[ "vr_1", "vr_1", "GUER", "WEST"] spawn T8U_fnc_Zone;
