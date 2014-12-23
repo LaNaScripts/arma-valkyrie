@@ -19,6 +19,7 @@ Therefore, in order to provide a high-quality gameplay experience, plugins and s
 * [Database support](#) reliable persistent worlds and scalable (or [less-than](https://github.com/newtondev/inidb-linux)) retrieval of player data.
 * [Weather patterns extension](#) offload calculations of weather patterns onto a more efficient platform
 * [Populations extension](#) offload calculations of group dynamics, unit behaviors, and role loadouts to a more efficient platform
+* [Headless client support](#) take full advantage of the new BIS-supported headless client by assigning each module to it's own headless client (and server core) to maximize system utilization
 
 Considering how *particular* Arma can be during those times that you don't quite have access to a supercomputer (it happens), it is my goal to provide players and server admins with a set of high-quality management tools that are easy to use and implement.
 
