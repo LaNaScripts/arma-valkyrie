@@ -70,18 +70,12 @@ player addEventHandler ["Fired", {
         {
           _unitActual ropeDetach _x;
         } forEach ropes _unitActual;
-
-        _unitActual addEventHandler ["GetIn", {
-          if (_this select 2 isEqualTo player) then {
-            _wp1 = _unitGroup addWaypoint [_origin, 0];
-
-            _wp setWaypointType "MOVE";
-            _wp setWaypointSpeed "FULL";
-            _wp setWaypointCombatMode "BLUE";
-            //_wp setWaypointStatements ["true", [West, "HQ"] sideChat _chatterMoving];
-          };
-        }];
+        
+        sleep 2;
       };
+      
+      _wp = _unitGroup addWaypoint [_origin, 0];
+      _wp setWaypointType "MOVE";
     };
   };
 }];
