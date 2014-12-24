@@ -45,12 +45,19 @@ player addEventHandler ["Fired", {
       _position = position _object;
 
       _origin = [_position, 1000, floor random 360] call BIS_fnc_relPos;
-      _unit = [_origin, 180, "B_Heli_Light_01_F", side player] call BIS_fnc_spawnVehicle;
+      _originActual = [_position, 5, floor random 360] call BIS_fnc_relPos;
+      _originCargo = [_position, 5, floor random 360] call BIS_fnc_relPos;
 
+      _unit = [_originActual, 180, "B_Heli_Light_01_F", side player] call BIS_fnc_spawnVehicle;
       _unitActual = _unit select 0;
       _unitGroup = _unit select 2;
 
-      _wp = _unitGroup addWaypoint [position player, 0];
+      _unitActual flyInHeight 60;
+      _cargo = "B_MRAP_01_hmg_F" createVehicle _originCargo;
+
+      _unitActual setSlingLoad _cargo;
+
+      _wp = _unitGroup addWaypoint [_position, 0];
       _wp setWaypointType "MOVE";
 
       _unitActual move (getPos _destination);
@@ -59,7 +66,10 @@ player addEventHandler ["Fired", {
 
       if (alive _unitActual && unitReady) then {
         sleep 2;
-        _unitActual land "GET IN";
+        
+        {
+          _unitActual ropeDetach _x;
+        } forEach ropes _unitActual;
 
         _unitActual addEventHandler ["GetIn", {
           if (_this select 2 isEqualTo player) then {
