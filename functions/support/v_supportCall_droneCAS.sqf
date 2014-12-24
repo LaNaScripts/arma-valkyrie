@@ -4,8 +4,24 @@ player addEventHandler ["Fired", {
     _type = _this select 4;
 
     if (_type isEqualTo "SmokeShellRed") then {
+
+      _chatter = [
+        "Save me a seat. Out.",
+        "Please keep your hands and feet inside the ride at all times. Out.",
+        "Thank you for flying Air Sierra-Sierra, Delta-Delta. Out.",
+        "Dinner and a show. Out",
+        "We're on it, out.",
+        "Burnin' for you. Out.",
+        "Zeus was busy, these chicks will have to do. Out.",
+        "I'll add it to your tab. Out.",
+        "On your mark. Out.",
+        "Bad guys captured and marked for death. Out.",
+        "Well call me Santa Claus. Out."
+      ] call BIS_fnc_selectRandom;
+
       [West, "HQ"] sideChat "Request confirmed.";
-      [West, "HQ"] sideChat "Dispatching UAV on CAS. Over";
+      [West, "HQ"] sideChat "Dispatching UAV on CAS.";
+      [West, "HQ"] sideChat _chatter;
 
       _object = _this select 6;
       _position = position _object;

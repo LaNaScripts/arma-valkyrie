@@ -11,9 +11,25 @@ player addEventHandler ["Fired", {
 
     _type = _this select 4;
 
+    _chatter = [
+      "Enjoy your new perspective. Out.",
+      "Enjoy the view. Out.",
+      "Eyes in the sky. Out.",
+      "Better than contacts. Out.",
+      "Thank you for flying Air Sierra-Sierra, Delta-Delta. Out.",
+      "Better than a telescope in a frat house. Out."
+      "Zeus was busy, this bird will have to do. Out.",
+      "I'll add it to your tab. Out.",
+      "On your mark. Out.",
+      "Bringing you a friend. Out.",
+      "Well call me Santa Claus. Out."
+    ] call BIS_fnc_selectRandom;
+
     if (_type isEqualTo "B_IRStrobe") then {
       [West, "HQ"] sideChat "Request confirmed.";
-      [West, "HQ"] sideChat "Dispatching UAV recon to marked position. Over.";
+      [West, "HQ"] sideChat "Dispatching UAV recon to marked position.";
+      [West, "HQ"] sideChat _chatter;
+
 
       _object = _this select 6;
       _position = position _object;

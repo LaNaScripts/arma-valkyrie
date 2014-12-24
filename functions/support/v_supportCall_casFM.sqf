@@ -1,11 +1,20 @@
-// TODO: randomize sidechat expressions
 // issues: CAS engaging inconsistently
-
+// or not at all
 
 player addEventHandler ["Fired", {
   _null = _this spawn {
 
     _type = _this select 4;
+
+    "Save me a seat. Out.",
+    "Please keep your hands and feet inside the ride at all times. Out.",
+    "Thank you for flying Air Sierra-Sierra, Delta-Delta. Out.",
+    "Dinner and a show. Out",
+    "Burnin' for you. Out.",
+    "Zeus was busy, so these birds will have to do. Out.",
+    "I'll add it to your tab. Out.",
+    "Bad guys captured and marked for death. Out.",
+    "Well call me Santa Claus. Out."
 
     if (_type isEqualTo "SmokeShellRed") then {
       [West, "HQ"] sideChat "Request confirmed.";
