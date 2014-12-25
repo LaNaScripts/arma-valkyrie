@@ -47,6 +47,7 @@ player addEventHandler ["Fired", {
       [West, "HQ"] sideChat _chatter;
 
       _object = _this select 6;
+      sleep 3;
       _position = position _object;
 
       _origin = [_position, 1000, floor random 360] call BIS_fnc_relPos;

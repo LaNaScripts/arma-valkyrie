@@ -22,6 +22,7 @@ player addEventHandler ["Fired", {
       [West, "HQ"] sideChat "Vallhalla awaits. Over.";
 
       _object = _this select 6;
+      sleep 3;
       _position = position _object;
 
       _unitGroup = createGroup side player;
