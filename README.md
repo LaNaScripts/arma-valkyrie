@@ -100,8 +100,17 @@ Strike from the shadows and see Altis in an entirely new *light*. Use the cover 
 
 Engage dynamic enemy forces that make intelligent use of the light to fight on their terms.
 
-### [Equipment Upgrades](#)
-Use collected scrap to reinforce vehicles, weapons, and equipment and improve their features. One man's trash ...
+### [Equipment & Base Upgrades](#)
+Use collected scrap to reinforce and improve the features of:
+
+* vehicles
+* weapons
+* equipment
+* base buildings
+
+Improved buildings and equipment allow for new gameplay features, units, and strategies, while vehicles and weapons can be improved to improve their durability, performance, and reliability.
+
+One man's trash ...
 
 ### [Drone Reconnaissance](#)
 * purchase UAVs, set them to patrol a map location, and view a live video feed from the UAV control console
