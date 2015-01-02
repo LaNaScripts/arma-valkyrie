@@ -48,6 +48,12 @@ Populations are determined using a list of encounters, each with an extensive ar
 ### [Dynamic Tasks](#)
 Receive a randomly generated task upon approaching a place of interest marker (?). Available tasks are based on encounters generated within an area, and are intended to be dynamic while remaining in a similar context to the other elements of an encounter.
 
+### [Defense system](#)
+Build the ultimate arcade survival platform!
+
+* Survive waves of enemies that become progressively more difficult to overcome
+* Cash in points earned by defeating enemies to bolster your defenses
+
 ### [Virtual Training](#)
 Make sure you're ready for the wastes with an extensive virtual training environment, built to showcase all aspects of valkyrie and its supporting modules.
 
