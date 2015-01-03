@@ -6,6 +6,8 @@
   @returns:
 */
 
+/*
+
 private [
   "_marker",
   "_pos",
@@ -14,31 +16,16 @@ private [
   "_vehicle"
 ];
 
-_marker = [_this, 0, objNull, ""] call BIS_fnc_param; // REQUIRED
-
-// temporary, replace with randomized safe position
-// note: createVehicle allows for a random marker name to be used -- vehicles could be spawned globally, but spawning as a reaction to a player entering the zone is probably the better option
-
+_marker = [_this, 0, objNull, ""] call BIS_fnc_param;
 _pos = markerPos _marker;
-
-// temporary, replace with random faction
 _vehicles = v_vehicles select 0;
 _type = _vehicles call BIS_fnc_selectRandom;
-
-// create vehicle
 _vehicle = createVehicle [_type, _pos, [], 10, "None"];
-
-/*
-
-//_vehicle setDamage (random 0.5); // setDamage must always be called before vehicleSetup
-
-//Set Vehicle Attributes
+_vehicle setDamage (random 0.5);
 _vehicle setFuel (0.2 + random 0.1);
 
-// Reset wheel damage
 {
   _hitPoint = configName _x;
-
   if (["Wheel", _hitPoint] call fn_findString != -1) then {
     _vehicle setHitPointDamage [_hitPoint, 0];
   };
@@ -50,9 +37,6 @@ _vehicle setVelocity [0,0,0.01];
 
 [_vehicle, 15*60, 30*60, 45*60, 1000, 0, false, _markerPos] spawn vehicleRespawnCheck;
 
-// remove ammo from armored
-
-// Reset armed Offroad to 1 mag
 if (_vehicleType isKindOf "Offroad_01_armed_base_F") then {
   _vehicle removeMagazinesTurret ["100Rnd_127x99_mag_Tracer_Yellow", [0]];
   _vehicle addMagazineTurret ["100Rnd_127x99_mag_Tracer_Yellow", [0]];
@@ -60,7 +44,8 @@ if (_vehicleType isKindOf "Offroad_01_armed_base_F") then {
 };
 
 if (_type > 1) then { _vehicle setVehicleAmmo (random 1.0) };
-*/
-
 _vehicle setDir (random 360);
-//[_vehicle] call randomWeapons;
+
+_object setObjectTexture [0, "#(rgb,8,8,3)color(0.804,0.788,0.647,0.6,CO)"];
+_object setObjectTexture [1, "#(rgb,8,8,3)color(0.804,0.804,0.706,0.35,CO)"];
+this animate ["Hide_Tent",1];

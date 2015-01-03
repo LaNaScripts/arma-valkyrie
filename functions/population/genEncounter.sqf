@@ -1,34 +1,15 @@
 /*
 
-  file: genEncounter.sqf
-
-  author: devyn spencer (http://github.com/devynspencer)
-
-  description:
-    - randomly generates an encounter relevant to the environment of a zone
+  author: http://github.com/devynspencer
+  about: randomly generates an encounter relevant to the environment of a zone
 
   parameters:
-    - marker: marker to generate from // string
-    - zone: type of parent zone // city/village/rural/desert/water/forest/
-    - type: type of encounter to generate
 
-      civilianAid, civilianEscort, civilianDefend, supplyDrop, convoyRaid, convoyEscort, depotRaid, transport, infiltrate
-
-    - size: size of encounter; larger value for larger encounter // 1/2/3/4(random)
-    - difficulty: difficulty; larger value for higher difficulty // 1/2/3/4/(random)
-
-  returns:
-    - generates the components of selected encounter near marker specified
-
-  example 1:
-
-    // generates a random difficult encounter
-    [_marker, rural, 3] call getEncounter;
-
-  example 2:
-
-    // generates a random city-appropriate encounter near _marker
-    [_marker, city] call getEncounter
+  - marker
+  - zone
+  - type
+  - size
+  - difficulty
 
 */
 

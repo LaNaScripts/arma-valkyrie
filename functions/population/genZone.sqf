@@ -1,8 +1,17 @@
 /*
 
-	file:		   functions\genZone.sqf
-	author:		 http://devynspencer.github.io
-	about:     generates zones based on zone type
+	file: functions\genZone.sqf
+	author:	http://devynspencer.github.io
+	about: generates random locations near a marker for a number of populations
+
+	- traffic
+	- patrols
+	- objectives
+	- encounters
+	- vehicles
+	- containers
+	- resources
+	- convoys
 
 */
 
