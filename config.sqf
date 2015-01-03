@@ -1,45 +1,150 @@
-/*
+v_markers = [
+  "rural_1",
+  "rural_2",
+  "rural_3",
+  "rural_4",
+  "rural_5",
+  "city_1",
+  "city_2",
+  "city_3",
+  "city_4",
+  "city_5"
+];
 
-  @file: "modules\population\config.sqf"
-  @author: http://devynspencer.github.io
-  @description:
+v_AAF_VR_entities = [
+  "I_Soldier_VR_F",
+  "I_Soldier_VR_F",
+  "I_Soldier_VR_F"
+];
+
+v_AAF_VR_soldiers = [
+  "I_Protagonist_VR_F",
+  "I_Protagonist_VR_F",
+  "I_Protagonist_VR_F"
+];
+
+v_AAF_sm_patrol = [
+  "I_G_Soldier_F",
+  "I_G_Soldier_F",
+  "I_G_Soldier_F",
+  "I_G_Soldier_F"
+];
+
+v_CIV_traffic = [
+  "C_Offroad_01_F",
+  "C_Offroad_01_repair_F",
+  "C_Hatchback_01_F",
+  "C_Hatchback_01_sport_F",
+  "C_SUV_01_F",
+  "C_Van_01_transport_F",
+  "C_Van_01_box_F",
+  "C_Van_01_fuel_F",
+  "C_Heli_Light_01_civil_F"
+];
+
+/*
+v_AAF_VR_mobileInfantry = [
+  "O_G_Offroad_01_F",
+  "I_G_Soldier_F",
+  "I_G_Soldier_F",
+  "I_G_Soldier_F",
+  "I_G_Soldier_F"
+];
 
 */
 
-// temporary
-v_loot_ammo = [
-  "11Rnd_45ACP_Mag",
-  "16Rnd_9x21_Mag",
-  "30Rnd_45ACP_Mag_SMG_01",
-  "30Rnd_9x21_Mag",
-  "30Rnd_9x21_Mag",
-  "30Rnd_556x45_Stanag",
-  "20Rnd_556x45_UW_mag",
-  "30Rnd_556x45_Stanag",
-  "30Rnd_65x39_caseless_mag"
+v_AAF_VR_technical = [
+  "O_G_Offroad_01_armed_F",
+  "O_G_Offroad_01_armed_F"
 ];
 
-v_loot_weapons = [
-  "arifle_SDAR_F",
-  "arifle_Mk20C_F",
-  "arifle_Mk20C_plain_F",
-  "arifle_TRG20_F",
-  "arifle_MXC_F",
-  "arifle_Katiba_C_F",
-  "hgun_ACPC2_F",
-  "hgun_Pistol_heavy_01_F",
-  "hgun_P07_F",
-  "hgun_Rook40_F"
+v_groupFireTeam = [
+  "O_soldier_TL_F",
+  "O_medic_F",
+  "O_soldier_F",
+  "O_soldier_AR_F"
 ];
 
-v_loot_items = [
-  "FirstAidKit",
-  "acc_flashlight",
-  "ItemCompass",
-  "ItemGPS",
-  "ItemRadio",
-  "ItemMap",
-  "ItemWatch",
-  "Binocular",
-  "Laserdesignator"
+v_groupFullTeam = [
+  "O_soldier_TL_F",
+  "O_medic_F",
+  "O_soldier_F",
+  "O_soldier_AR_F",
+  "O_soldier_TL_F",
+  "O_soldier_F",
+  "O_soldier_F",
+  "O_soldier_LAT_F"
+];
+
+v_groupMiniPat = [
+  "O_soldier_TL_F",
+  "O_medic_F",
+  "O_soldier_F"
+];
+
+v_groupFullPat = [
+  "O_soldier_SL_F",
+  "O_medic_F",
+  "O_soldier_F",
+  "O_soldier_TL_F",
+  "O_soldier_F",
+  "O_soldier_AR_F"
+];
+
+v_groupIfritPat = [
+  "O_MRAP_02_HMG_F",
+  "O_MRAP_02_HMG_F"
+];
+
+v_groupTechnicalPat = [
+  "O_G_Offroad_01_armed_F",
+  "O_G_Offroad_01_armed_F"
+];
+
+v_groupW_APC = [
+  "O_APC_WHEELED_02_RCWS_F"
+];
+
+v_groupT_APC = [
+  "O_APC_Tracked_02_cannon_F"
+];
+
+v_groupMarksmen = [
+  "O_sniper_F",
+  "O_spotter_F"
+];
+
+v_groupGurTeam = [
+  "I_soldier_TL_F",
+  "I_medic_F",
+  "I_soldier_F",
+  "I_soldier_F",
+  "I_soldier_F",
+  "I_soldier_AR_F"
+];
+
+v_groupBluTeam = [
+  "B_soldier_TL_F",
+  "B_medic_F",
+  "B_soldier_F",
+  "B_soldier_F",
+  "B_soldier_F",
+  "B_soldier_AR_F"
+];
+
+v_groupCIV = [
+  "C_man_1",
+  "C_man_polo_1_F_asia",
+  "C_man_1_1_F",
+  "C_man_1_2_F",
+  "C_man_1_3_F",
+  "C_man_polo_1_F",
+  "C_man_polo_2_F",
+  "C_man_polo_3_F",
+  "C_man_polo_4_F",
+  "C_man_polo_5_F",
+  "C_man_polo_6_F",
+  "C_man_p_fugitive_F",
+  "C_man_p_fugitive_F_afro",
+  "C_man_p_fugitive_F_euro"
 ];
