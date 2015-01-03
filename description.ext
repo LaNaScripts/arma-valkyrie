@@ -16,8 +16,8 @@ respawnTemplates[] = { "MenuPosition" };
 respawnOnStart = 0;
 aikills = 0;
 
-author = "";
-onLoadName = "valkyrie | dynamically generated destruction";
+author = "http://devynspencer.github.io";
+onLoadName = "valkyrie";
 onLoadMission = "";
 
 class Header

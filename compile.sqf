@@ -7,6 +7,8 @@
 */
 
 // compile asset pools
+
+/*
 compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\ammo.sqf");
 compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\container.sqf");
 compile preprocessFileLineNumbers (MISSION_ROOT + "population\pools\encounters.sqf");
@@ -32,3 +34,5 @@ getNearestMarker = compile preProcessFileLineNumbers (MISSION_ROOT + "server\fun
 getRandomMarker  = compile preProcessFileLineNumbers (MISSION_ROOT + "server\functions\getRandomMarker.sqf");
 resetAmmo        = compile preProcessFileLineNumbers (MISSION_ROOT + "server\functions\resetAmmo.sqf");
 setBehavior      = compile preProcessFileLineNumbers (MISSION_ROOT + "server\functions\setBehavior.sqf");
+
+*/

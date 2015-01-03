@@ -5,6 +5,19 @@ This project is a collection of dynamic Arma 3 modules designed to create a dyna
 ## Gameplay
 Enter the role of a lone survivor lost deep within enemy lines. Overcome an overwhelming enemy force using only your wits and the resources around you (though if one of those resources *happens* to be an enemy heavy weapons cache, so be it).
 
+### Area Patrols
+Area patrols appear randomly in a zone, and award a small amount of resources when destroyed.
+
+Destroying enemy patrols will eventually increase reputation with other factions and allow for special support options to be accumulated and used.
+
+### Objective Spawns
+Enemies will dynamically spawn near an objective with behavior appropriate for the objective's type.
+
+**Examples include:**
+
+* a civilian supply convoy might also spawn a group of enemies (an objective spawn) 1000m away from the convoy with orders to stop and loot it.
+* a civilian field hospital might spawn a larger version of the above enemies, in addition to a group of rebels with orders to defend the location.
+
 ## Plugins & Optimization
 The overall goal of this project is to provide players with an enormous open world platform while retaining the small details that make a game interesting. Technically speaking, this requires a well-designed codebase that leverages dynamic spawns and limits placement of static elements for longer than absolutely necessary.
 
