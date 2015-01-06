@@ -1,3 +1,46 @@
+class RscTitles {
+
+	class hudMessages {
+	idd = -1;
+	duration = 1;
+	name = "hudMessages";
+	onLoad = "with uiNameSpace do { hudMessages = _this select 0 }";
+
+		class controls {
+			class structuredText {
+
+				access = 0;
+				type = 13;
+				idc = 1001;
+				style = 0x00;
+				lineSpacing = 1;
+
+				x = 0.103165 * safezoneW + safezoneX;
+				y = 0.757996 * safezoneH + safezoneY;
+				w = 0.778208 * safezoneW;
+				h = 0.0660106 * safezoneH;
+
+				size = 0.020;
+				colorBackground[] = {0,0,0,0};
+				colorText[] = {1,1,1,1};
+				text = "";
+				font = "PuristaSemiBold";
+
+				class Attributes {
+					font = "PuristaSemiBold";
+					color = "#FFFFFF";
+					align = "CENTER";
+					valign = "top";
+					shadow = true;
+					shadowColor = "#000000";
+					underline = false;
+					size = "4";
+				};
+			};
+		};
+	};
+};
+
 allowFunctionsLog = 1;
 
 enableDebugConsole = 1;
@@ -12,7 +55,7 @@ respawn = 3;
 respawnDelay = 10;
 respawnVehicleDelay = 60;
 respawnDialog = 0;
-respawnTemplates[] = { "MenuPosition" };
+respawnTemplates[] = {"MenuPosition" };
 respawnOnStart = 0;
 aikills = 0;
 
