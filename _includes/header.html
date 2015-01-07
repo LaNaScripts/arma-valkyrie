@@ -10,5 +10,9 @@
     {% if page.description %}
       {{ page.description }}
     {% endif %}
+
+    {% if page.date %}
+      {{ page.date | date: '%B %d, %Y' }}
+    {% endif %}
   </h2>
 </header>
