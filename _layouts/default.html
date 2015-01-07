@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
   <body>
-    <div class="wrapper">
+    <div class="off-canvas-wrap">
+      <div class="inner-wrap">
+        {% include topbar.html %}
+        {% include header.html %}
 
-      {% include header.html %}
-
-      <section id="main_content">
-
-        {{ content }}
-
-      </section>
+        <div class="row">
+          {{ content }}
+        </div>
+        {% include footer.html %}
+      </div>
     </div>
+    <script src="public/js/jquery.js"></script>
+    <script src="public/js/foundation.min.js"></script>
   </body>
 </html>

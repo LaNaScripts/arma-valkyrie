@@ -1,0 +1,29 @@
+.top-bar .name h1 a {
+  color: #FF9900;
+}
+
+.top-bar-section {
+  ul li {
+    &:not(.has-form) {
+      a:not(.button) {
+        color: #478;
+        font-family: "Permanent Marker";
+        font-size: 1.2rem;
+
+        &:hover {
+          color: #589;
+          text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+
+    &.active:not(.has-form) {
+      a:not(.button) {
+        color: #FF9900;
+        &:hover {
+          text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+}

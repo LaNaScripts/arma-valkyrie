@@ -1,41 +1,10 @@
 title: valkyrie
-description: Arma 3 modules designed around facilitating a rich, dynamically-generated open world adventures. Experience a grittier, engaging version of Altis that adapts to your play style.
+description: "Survive a world born to violence."
 baseurl: ""
 url: "http://devynspencer.github.io"
 
 twitter_username: devynspencer
-github_username:  devynspencer
+github_username: devynspencer
 # Build settings
-
+permalink: pretty
 markdown: kramdown
-
-include: ['_pages']
-
-defaults:
-  -
-    scope:
-      path: "_pages/modules"
-      type: "pages"
-    values:
-      layout: "module"
-      author: "devyn spencer"
-      categories:
-        - modules
-  -
-    scope:
-      path: "_pages/development"
-      type: "pages"
-    values:
-      layout: "topic"
-      author: "devyn spencer"
-      categories:
-        - topics
-  -
-    scope:
-      path: "_posts"
-      type: "posts"
-    values:
-      layout: "update"
-      author: "devyn spencer"
-      categories:
-        - topics"
