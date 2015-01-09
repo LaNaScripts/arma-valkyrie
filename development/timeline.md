@@ -27,6 +27,12 @@ In rough order of attention, here is a brief outline of the features and topics 
     </tr>
 
     <tr>
+      <td class="name">GUI & Inventory Overhaul</td>
+      <td>Create a functional, appealing and immersive interface that is fun and easy to use.</td>
+      <td class="status not-started">Not started</td>
+    </tr>
+
+    <tr>
       <td class="name">Resources</td>
       <td>Salvage resources from the environment, for use in crafting and construction.
       </td>

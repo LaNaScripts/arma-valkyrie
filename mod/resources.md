@@ -152,6 +152,14 @@ description: '"We are meek. We shall by morning, inherit the earth."'
       <td>Description</td>
       <td>structures</td>
     </tr>
+
+    <tr>
+    <td></td>
+      <td class="name">Plant</td>
+      <td class="name">Fiber</td>
+      <td>Description</td>
+      <td>clothing, tools</td>
+    </tr>
   </tbody>
 </table>
 
